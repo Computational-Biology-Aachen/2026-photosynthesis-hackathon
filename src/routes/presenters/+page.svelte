@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import Nav from '$lib/nav/Nav.svelte';
 	import NavItem from '$lib/nav/NavItem.svelte';
 	import Header from '$lib/pico/sections/Header.svelte';
@@ -10,10 +11,10 @@
 </script>
 
 <Nav>
-	<NavItem href="/" name="Home" />
-	<NavItem href="/presenters" name="Presenters" />
-	<NavItem href="/info" name="Info" />
-	<NavItem href="/contact" name="Contact" />
+	<NavItem href="{base}/" name="Home" />
+	<NavItem href="{base}/presenters" name="Presenters" />
+	<NavItem href="{base}/info" name="Info" />
+	<NavItem href="{base}/contact" name="Contact" />
 </Nav>
 <Header>
 	<H1 color="white">Presenters</H1>
@@ -22,7 +23,7 @@
 <Main>
 	<Section>
 		<div class="row">
-			<img src="/anna.png" alt="Prof. Dr. Anna Matuszyńska" />
+			<img src="{base}/anna.png" alt="Prof. Dr. Anna Matuszyńska" />
 			<div>
 				<H1 color="primary">Prof. Dr. Anna Matuszyńska</H1>
 				<H4 color="secondary">Computational Life Science</H4>
@@ -51,7 +52,7 @@
 	</Section>
 	<Section color="secondary">
 		<div class="row">
-			<img src="/marvin.png" alt="Dr. Marvin van Aalst" />
+			<img src="{base}/marvin.png" alt="Dr. Marvin van Aalst" />
 			<div>
 				<H1 color="white">Dr. Marvin van Aalst</H1>
 				<H4 color="white">Computational Life Science</H4>

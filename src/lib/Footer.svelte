@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import Link from './pico/Link.svelte';
 	import H2 from './pico/text/H2.svelte';
 	import Text from './pico/text/Text.svelte';
@@ -21,10 +22,10 @@
 		</div>
 		<div class="row">
 			<Link href="https://www.cpbl.rwth-aachen.de/go/id/sazuq/?lidx=1">
-				<img src="/cpbl-rwth-logo.jpg" alt="CPBL logo" />
+				<img src="{base}/cpbl-rwth-logo.jpg" alt="CPBL logo" />
 			</Link>
 			<Link href="https://www.jan-ingenhousz-institute.org/">
-				<img src="/jan-ingenhousz-institute-logo.png" alt="CPBL logo" />
+				<img src="{base}/jan-ingenhousz-institute-logo.png" alt="CPBL logo" />
 			</Link>
 		</div>
 	</div>

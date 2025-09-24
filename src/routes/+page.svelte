@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import BtnGrp from '$lib/BtnGrp.svelte';
 	import ButtonGroup from '$lib/ButtonGroup.svelte';
 	import Footer from '$lib/Footer.svelte';
@@ -32,9 +33,9 @@
 			<Text><Bold>Registration open until:</Bold> 9.11</Text>
 
 			<ButtonGroup>
-				<BtnGrp href="/presenters">Presenters</BtnGrp>
-				<BtnGrp href="/info">Info</BtnGrp>
-				<BtnGrp href="/apply" disabled={true}>Apply</BtnGrp>
+				<BtnGrp href="{base}/presenters">Presenters</BtnGrp>
+				<BtnGrp href="{base}/info">Info</BtnGrp>
+				<BtnGrp href="{base}/apply" disabled={true}>Apply</BtnGrp>
 			</ButtonGroup>
 		</div>
 	</R2>
@@ -42,9 +43,9 @@
 <Section color="secondary">
 	<H2 color="white">Sponsors</H2>
 	<GridSponsor>
-		<Sponsor name="" href="/" img="/placeholder.jpg" />
-		<Sponsor name="" href="/" img="/placeholder.jpg" />
-		<Sponsor name="" href="/" img="/placeholder.jpg" />
+		<Sponsor name="" href="{base}/" img="{base}/placeholder.jpg" />
+		<Sponsor name="" href="{base}/" img="{base}/placeholder.jpg" />
+		<Sponsor name="" href="{base}/" img="{base}/placeholder.jpg" />
 	</GridSponsor>
 </Section>
 <Section color="white">

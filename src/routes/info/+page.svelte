@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import Nav from '$lib/nav/Nav.svelte';
 	import NavItem from '$lib/nav/NavItem.svelte';
 	import Header from '$lib/pico/sections/Header.svelte';
@@ -12,10 +13,10 @@
 </script>
 
 <Nav>
-	<NavItem href="/" name="Home" />
-	<NavItem href="/presenters" name="Presenters" />
-	<NavItem href="/info" name="Info" />
-	<NavItem href="/contact" name="Contact" />
+	<NavItem href="{base}/" name="Home" />
+	<NavItem href="{base}/presenters" name="Presenters" />
+	<NavItem href="{base}/info" name="Info" />
+	<NavItem href="{base}/contact" name="Contact" />
 </Nav>
 <Header>
 	<H1 color="white">Info</H1>
@@ -24,7 +25,7 @@
 <Main>
 	<Section>
 		<R2>
-			<img src="/people-working.png" alt="people working" />
+			<img src="{base}/people-working.png" alt="people working" />
 			<div>
 				<H2 color="secondary">Important dates</H2>
 				<H6 color="secondary">Date of the hackathon</H6>
