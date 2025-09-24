@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+:host,
+:root {
+    font-size: 100%
+}
+
+@media (min-width:576px) {
+
+    :host,
+    :root {
+        font-size: 106.25%
+    }
+}
+
+@media (min-width:768px) {
+
+    :host,
+    :root {
+        font-size: 112.5%
+    }
+}
+
+@media (min-width:1024px) {
+
+    :host,
+    :root {
+        font-size: 118.75%
+    }
+}
+
+@media (min-width:1280px) {
+
+    :host,
+    :root {
+        font-size: 125%
+    }
+}
+
+@media (min-width:1536px) {
+
+    :host,
+    :root {
+        font-size: 131.25%
+    }
+}
+
+html,
+body {
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+
+:root {
+    /* Colors */
+    --white: #eff1f4;
+    --black: #202632;
+    --primary: rgb(0, 97, 101);
+    --secondary: #8c7658;
+    --muted: #23403d;
+    --bright: #dec499;
+    /* Fonts */
+    --font-family-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-sans-serif: system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial, "Helvetica Neue", sans-serif, var(--font-family-emoji);
+    --font-family-monospace: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace, var(--font-family-emoji);
+    --font-family: sans-serif;
+    --bold: 700;
+    /* Layout */
+    --max-width: 1200px;
+    --section-ypad: 4rem;
+    /* Spacing */
+    --spacing: 1rem;
+    --text-ypad: 1rem;
+    /* Animations */
+    --transition: 0.2s ease-in-out;
+    /* Icons */
+    --icon-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(136, 145, 164)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+}
