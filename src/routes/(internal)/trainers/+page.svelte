@@ -1,7 +1,5 @@
 <script>
 	import { base } from '$app/paths';
-	import Nav from '$lib/nav/Nav.svelte';
-	import NavItem from '$lib/nav/NavItem.svelte';
 	import Header from '$lib/pico/sections/Header.svelte';
 	import Main from '$lib/pico/sections/Main.svelte';
 	import Section from '$lib/pico/sections/Section.svelte';
@@ -10,14 +8,8 @@
 	import Text from '$lib/pico/text/Text.svelte';
 </script>
 
-<Nav>
-	<NavItem href="{base}/" name="Home" />
-	<NavItem href="{base}/presenters" name="Presenters" />
-	<NavItem href="{base}/info" name="Info" />
-	<NavItem href="{base}/contact" name="Contact" />
-</Nav>
 <Header>
-	<H1 color="white">Presenters</H1>
+	<H1 color="white">Trainers</H1>
 </Header>
 
 <Main>

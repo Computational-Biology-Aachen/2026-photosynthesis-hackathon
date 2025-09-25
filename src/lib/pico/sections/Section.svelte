@@ -6,7 +6,7 @@
 		color = 'white'
 	}: {
 		children: Snippet;
-		color?: 'black' | 'white' | 'primary' | 'secondary';
+		color?: 'black' | 'white' | 'primary' | 'secondary' | 'bright' | 'muted';
 	} = $props();
 </script>
 
@@ -43,5 +43,11 @@
 	}
 	.secondary {
 		background-color: var(--secondary);
+	}
+	.bright {
+		background-color: var(--bright);
+	}
+	.muted {
+		background-color: var(--muted);
 	}
 </style>

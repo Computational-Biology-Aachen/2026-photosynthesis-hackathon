@@ -24,9 +24,6 @@
 			<Link href="https://www.cpbl.rwth-aachen.de/go/id/sazuq/?lidx=1">
 				<img src="{base}/cpbl-rwth-logo.jpg" alt="CPBL logo" />
 			</Link>
-			<Link href="https://www.jan-ingenhousz-institute.org/">
-				<img src="{base}/jan-ingenhousz-institute-logo.png" alt="CPBL logo" />
-			</Link>
 		</div>
 	</div>
 </footer>
@@ -70,5 +67,10 @@
 	img {
 		width: 100%;
 		max-width: 600px;
+		transition: all 0.5s ease;
+	}
+	img:hover {
+		/* border: 1px solid var(--primary); */
+		transform: scale(1.07);
 	}
 </style>

@@ -17,7 +17,7 @@
 </script>
 
 <Hero />
-<Section>
+<Section color="white">
 	<R2>
 		<img src="hand.png" alt="placeholder" />
 		<div>
@@ -28,12 +28,13 @@
 			>
 			<Text>Let's understand it together in a Hackathon Workshop!</Text>
 			<Text><Bold>When?</Bold> 09. - 13.03.2026</Text>
-			<Text><Bold>Where?</Bold> TBD</Text>
+			<Text><Bold>Where?</Bold> University of Ibadan, Nigeria</Text>
 			<Text><Bold>Registration opens:</Bold> TBA</Text>
-			<Text><Bold>Registration open until:</Bold> 9.11</Text>
+			<Text><Bold>Registration open until:</Bold> 9th of November</Text>
+			<Text>Application from Europe and Africa encouraged</Text>
 
 			<ButtonGroup>
-				<BtnGrp href="{base}/presenters">Presenters</BtnGrp>
+				<BtnGrp href="{base}/trainers">Trainers</BtnGrp>
 				<BtnGrp href="{base}/info">Info</BtnGrp>
 				<BtnGrp href="{base}/apply" disabled={true}>Apply</BtnGrp>
 			</ButtonGroup>
@@ -41,21 +42,29 @@
 	</R2>
 </Section>
 <Section color="secondary">
-	<H2 color="white">Sponsors</H2>
-	<GridSponsor>
-		<Sponsor name="" href="{base}/" img="{base}/placeholder.jpg" />
-		<Sponsor name="" href="{base}/" img="{base}/placeholder.jpg" />
-		<Sponsor name="" href="{base}/" img="{base}/placeholder.jpg" />
-	</GridSponsor>
-</Section>
-<Section color="white">
-	<H2 color="secondary">Questions</H2>
-	<Text
+	<H2 color="white">Questions</H2>
+	<Text color="white"
 		>Whether you're curious about features, research, or publication, we're here to answer any
 		questions.</Text
 	>
 	<Button><Link color="white" href="contact">Let's Talk Now</Link></Button>
 </Section>
+<Section color="white">
+	<H2 color="secondary">Sponsors</H2>
+	<GridSponsor>
+		<Sponsor
+			name=""
+			href="https://www.mastercardfoundation.fund.cam.ac.uk/"
+			img="{base}/mastercardfoundation.png"
+		/>
+		<Sponsor
+			name=""
+			href="https://www.jan-ingenhousz-institute.org/"
+			img="{base}/jan-ingenhousz-institute-logo.png"
+		/>
+	</GridSponsor>
+</Section>
+
 <Footer />
 
 <style>
