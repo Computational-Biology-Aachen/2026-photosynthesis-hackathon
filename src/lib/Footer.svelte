@@ -1,8 +1,9 @@
 <script lang="ts">
-	import { base } from '$app/paths';
 	import Link from './pico/Link.svelte';
 	import H2 from './pico/text/H2.svelte';
 	import Text from './pico/text/Text.svelte';
+
+	import logo from '$lib/assets/cpbl-rwth-logo.jpg';
 </script>
 
 <footer>
@@ -22,7 +23,9 @@
 		</div>
 		<div class="row">
 			<Link href="https://www.cpbl.rwth-aachen.de/go/id/sazuq/?lidx=1">
-				<img src="{base}/cpbl-rwth-logo.jpg" alt="CPBL logo" />
+				<img
+					src={logo}
+					alt="CPBL logo" />
 			</Link>
 		</div>
 	</div>
@@ -31,12 +34,18 @@
 <style>
 	footer {
 		margin: 0;
-		padding: var(--section-ypad) 0;
+		padding: var(--section-ypad) 2rem;
 		min-height: 12rem;
 		background-color: var(--black);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+	}
+
+	@media screen and (min-width: var(--max-width)) {
+		footer {
+			padding: var(--section-ypad) 0;
+		}
 	}
 	.inner {
 		margin: 0 auto;
