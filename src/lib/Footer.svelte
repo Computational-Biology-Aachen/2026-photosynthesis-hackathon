@@ -3,9 +3,12 @@
 	import H2 from './pico/text/H2.svelte';
 	import Text from './pico/text/Text.svelte';
 
-	import logo from '$lib/assets/cpbl-rwth-logo.jpg';
 	import { faGithub } from '@fortawesome/free-brands-svg-icons';
 	import Fa from 'svelte-fa';
+
+	import { asset } from '$app/paths';
+
+	console.log(asset('/cpbl-rwth-logo.jpg'));
 </script>
 
 <footer>
@@ -21,7 +24,7 @@
 				Prof. Dr. Anna B. Matuszyńska <br />
 				Design und Umsetzung Dr. Marvin van Aalst <Link
 					color="white"
-					href="https://github.com/Computational-Biology-Aachen/2026-photosynthesis-hackathon"
+					href="https://github.com/Computational-Biology-Aachen/Computational-Biology-Aachen.github.io"
 					><Fa icon={faGithub} /></Link
 				><br />
 				(c) 2025 Prof. Dr. Anna B. Matuszyńska, Alle Rechte vorbehalten.
@@ -30,7 +33,7 @@
 		<div class="row">
 			<Link href="https://www.cpbl.rwth-aachen.de/go/id/sazuq/?lidx=1">
 				<img
-					src={logo}
+					src={asset('/cpbl-rwth-logo.jpg')}
 					alt="CPBL logo" />
 			</Link>
 		</div>

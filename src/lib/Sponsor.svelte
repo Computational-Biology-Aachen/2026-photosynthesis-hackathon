@@ -3,17 +3,20 @@
 
 	let {
 		href,
-		img,
-		name
+		img
 	}: {
 		href: string;
-		name: string;
 		img: string;
 	} = $props();
+
+	console.log(img);
 </script>
 
 <Link {href}>
-	<div class="card" style="background-image: url({img})"></div>
+	<div
+		class="card"
+		style="background-image: url({img})">
+	</div>
 </Link>
 
 <style>

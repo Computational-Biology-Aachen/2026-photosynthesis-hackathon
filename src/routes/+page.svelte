@@ -109,11 +109,9 @@
 		hackathon.</Text>
 	<GridSponsor>
 		<Sponsor
-			name=""
 			href="https://www.mastercardfoundation.fund.cam.ac.uk/"
 			img={mcLogo} />
 		<Sponsor
-			name=""
 			href="https://www.jan-ingenhousz-institute.org/"
 			img={jiiLogo} />
 	</GridSponsor>
