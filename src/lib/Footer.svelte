@@ -4,6 +4,8 @@
 	import Text from './pico/text/Text.svelte';
 
 	import logo from '$lib/assets/cpbl-rwth-logo.jpg';
+	import { faGithub } from '@fortawesome/free-brands-svg-icons';
+	import Fa from 'svelte-fa';
 </script>
 
 <footer>
@@ -17,7 +19,11 @@
 
 				Verantwortlich i.S.d. § 6 Abs. 2 MDStV: <br />
 				Prof. Dr. Anna B. Matuszyńska <br />
-				Design und Umsetzung Dr. Marvin van Aalst<br />
+				Design und Umsetzung Dr. Marvin van Aalst <Link
+					color="white"
+					href="https://github.com/Computational-Biology-Aachen/2026-photosynthesis-hackathon"
+					><Fa icon={faGithub} /></Link
+				><br />
 				(c) 2025 Prof. Dr. Anna B. Matuszyńska, Alle Rechte vorbehalten.
 			</Text>
 		</div>
