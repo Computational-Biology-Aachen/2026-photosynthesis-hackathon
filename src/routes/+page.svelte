@@ -101,7 +101,7 @@
 	<Button
 		><Link
 			color="white"
-			href="contact">Let's Talk Now</Link
+			href={resolve('/contact')}>Let's Talk Now</Link
 		></Button>
 </Section>
 <Section color="white">
