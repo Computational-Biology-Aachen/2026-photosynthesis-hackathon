@@ -21,6 +21,10 @@
 	import mcLogo from '$lib/assets/mastercardfoundation.png';
 </script>
 
+<svelte:head>
+	<title>Photosynthesis hackathon</title>
+</svelte:head>
+
 <Hero />
 <Section color="white">
 	<R2>

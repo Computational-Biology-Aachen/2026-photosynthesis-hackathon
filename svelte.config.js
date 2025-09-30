@@ -30,7 +30,7 @@ const config = {
 			precompress: false,
 			strict: true,
 			fallback: '404.html'
-		}),
+		})
 	}
 };
 
