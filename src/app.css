@@ -15,43 +15,29 @@ img {
     font-size: 100%
 }
 
-@media (min-width:576px) {
+
+@media (min-width:48rem) {
 
     :host,
     :root {
-        font-size: 106.25%
+        font-size: 100%
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:64rem) {
 
     :host,
     :root {
-        font-size: 112.5%
+        font-size: 110%
     }
 }
 
-@media (min-width:1024px) {
+
+@media (min-width: 96rem) {
 
     :host,
     :root {
-        font-size: 118.75%
-    }
-}
-
-@media (min-width:1280px) {
-
-    :host,
-    :root {
-        font-size: 125%
-    }
-}
-
-@media (min-width:1536px) {
-
-    :host,
-    :root {
-        font-size: 131.25%
+        font-size: 120%
     }
 }
 
@@ -81,7 +67,7 @@ body {
     --font-family: sans-serif;
     --bold: 700;
     /* Layout */
-    --max-width: 1200px;
+    --max-width: 60rem;
     --section-ypad: 4rem;
     /* Spacing */
     --spacing: 1rem;

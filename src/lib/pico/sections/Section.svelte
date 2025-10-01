@@ -22,7 +22,7 @@
 		padding: var(--section-ypad) 2rem;
 	}
 
-	@media screen and (min-width: var(--max-width)) {
+	@media (min-width: 96rem) {
 		section {
 			padding: var(--section-ypad) 0;
 		}

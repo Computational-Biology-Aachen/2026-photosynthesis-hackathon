@@ -19,7 +19,7 @@
 		justify-content: center;
 	}
 
-	@media screen and (min-width: var(--max-width)) {
+	@media (min-width: 96rem) {
 		header {
 			padding: var(--section-ypad) 0;
 		}

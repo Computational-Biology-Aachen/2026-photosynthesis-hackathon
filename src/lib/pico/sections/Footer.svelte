@@ -11,12 +11,18 @@
 <style>
 	footer {
 		margin: 0;
-		padding: var(--section-ypad) 0;
+		padding: var(--section-ypad) 2rem;
 		min-height: 12rem;
 		background-color: var(--black);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+	}
+
+	@media (min-width: 96rem) {
+		footer {
+			padding: var(--section-ypad) 0;
+		}
 	}
 	.inner {
 		margin: 0 auto;

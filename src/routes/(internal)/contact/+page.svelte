@@ -17,7 +17,9 @@
 <Main>
 	<Section>
 		<R2>
-			<img src="{base}/people-working.png" alt="people working" />
+			<img
+				src="{base}/people-working.png"
+				alt="people working" />
 			<div>
 				<H2 color="secondary">You can find us at</H2>
 
@@ -47,7 +49,7 @@
 	img {
 		display: none;
 	}
-	@media screen and (min-width: 800px) {
+	@media (min-width: 64rem) {
 		img {
 			display: block;
 			max-width: 100%;

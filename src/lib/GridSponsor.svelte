@@ -15,7 +15,7 @@
 		grid-gap: 10px;
 	}
 
-	@media (min-width: 768px) {
+	@media (min-width: 64rem) {
 		div {
 			grid-template-columns: 1fr 1fr;
 		}

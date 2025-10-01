@@ -43,12 +43,22 @@
 				links between <Bold
 					>genotypic variation and photosynthetic performance.</Bold
 				></Text>
+			<Text><Bold>When?</Bold> 09. - 13.03.2026</Text>
 			<Text
-				>The hackathon is hosted at the International Institute of Tropical
-				Agriculture (IITA) in Ibadan, Nigeria. Travel support may be available
-				for selected participants.</Text>
+				><Bold>Where?</Bold> International Institute of Tropical Agriculture (IITA),
+				Ibadan, Nigeria</Text>
+			<Text><Bold>Registration opens:</Bold> TBA</Text>
+			<Text><Bold>Registration open until:</Bold> 9th of November</Text>
+			<Text
+				>📅 Apply now and be part of a new community driving innovation at the
+				intersection of genetics, physiology, and data.</Text>
 		</div>
 	</R2>
+	<Text
+		>The hackathon is hosted at the International Institute of Tropical
+		Agriculture (IITA) in Ibadan, Nigeria. <Bold
+			>Travel support may be available for selected participants</Bold
+		>.</Text>
 	<Text>Over five days, participants will</Text>
 	<Ul>
 		<Li>
@@ -74,16 +84,7 @@
 		your skills — and your curiosity — to help push the boundaries of crop improvement
 		and climate resilience.
 	</Text>
-	<Text
-		>📅 Apply now and be part of a new community driving innovation at the
-		intersection of genetics, physiology, and data.</Text>
-	<Text><Bold>When?</Bold> 09. - 13.03.2026</Text>
-	<Text
-		><Bold>Where?</Bold> International Institute of Tropical Agriculture (IITA),
-		Ibadan, Nigeria</Text>
-	<Text><Bold>Registration opens:</Bold> TBA</Text>
-	<Text><Bold>Registration open until:</Bold> 9th of November</Text>
-	<Text>Application from Europe and Africa encouraged</Text>
+	<Text>Application from both Europe and Africa is highly encouraged.</Text>
 
 	<ButtonGroup>
 		<BtnGrp href={resolve('/trainers')}>Trainers</BtnGrp>
@@ -127,7 +128,7 @@
 	img {
 		display: none;
 	}
-	@media screen and (min-width: 800px) {
+	@media (min-width: 64rem) {
 		img {
 			display: block;
 			max-width: 100%;

@@ -62,7 +62,7 @@
 		font-weight: 500;
 	}
 
-	@media screen and (min-width: 800px) {
+	@media (min-width: 64rem) {
 		h1 {
 			font-size: 5rem;
 		}
