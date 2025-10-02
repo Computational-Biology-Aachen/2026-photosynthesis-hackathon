@@ -21,6 +21,7 @@
 	<Section>
 		<R2>
 			<img
+				class="hide-on-sm"
 				src="{base}/people-working.png"
 				alt="people working" />
 			<div>
@@ -51,38 +52,69 @@
 		</Ul>
 	</Section>
 	<Section>
-		<H2>Data</H2>
-		<Text>Describe the JII and obtained data here.</Text>
-	</Section>
-	<Section color="primary">
-		<H2 color="white">Program overview</H2>
-		<Text color="white">The event runs over <Bold>five days</Bold>:</Text>
+		<H2>Program overview</H2>
+		<Text>The event runs over <Bold>five days</Bold>:</Text>
 		<Ul>
-			<Li color="white"
+			<Li
 				><Bold>Days 1-2:</Bold> Interactive lectures and hands-on sessions introduce
 				the challenge and datasets, ensuring all participants share a common foundation.</Li>
-			<Li color="white"
+			<Li
 				><Bold>Days 3-4 (first half):</Bold> Teams work intensively on the hackathon
 				challenge, developing solutions and preparing their pitches.</Li>
-			<Li color="white"
+			<Li
 				><Bold>Day 4 (second half):</Bold> Final presentations take place at an open
 				outreach event for the host institution and wider community.</Li>
-			<Li color="white"
+			<Li
 				><Bold>Day 5:</Bold> Participants shape follow-up actions and explore opportunities
 				for continued collaboration</Li>
 		</Ul>
+	</Section>
+	<Section color="primary">
+		<H2 color="white">Host & Venue</H2>
+		<R2>
+			<img
+				src="{base}/iita.jpg"
+				alt="iita" />
+
+			<div>
+				<Text color="white"
+					>The International Institute of Tropical Agriculture (<Bold>IITA</Bold
+					>) is a leading non-profit research for development institution and a
+					member of CGIAR, providing agricultural innovations that address
+					Africa's most pressing challenges, including climate change, hunger,
+					malnutrition, and poverty. IITA headquarters is located in Ibadan, Oyo
+					state, Nigeria, with five regional hubs and several research stations
+					across Africa, IITA's main priority is to transform African
+					agriculture, improve farmers' livelihoods, and ensure a food secure
+					future for sub-Saharan Africa.</Text>
+			</div>
+		</R2>
+		<Text color="white">
+			<Bold>Venue</Bold><br />
+			International Institute of Tropical Agriculture (IITA) Headquarters PMB 5320,
+			Oyo Road, Ibadan, Oyo State, Nigeria.<br /><br />
+			<Bold>Accomodation</Bold><br />
+			International House, IITA Headquarters, Ibadan, Nigeria
+		</Text>
+	</Section>
+	<Section>
+		<H2>Data</H2>
+		<Text>Describe the JII and obtained data here.</Text>
 	</Section>
 </Main>
 
 <style>
 	img {
+		display: block;
+		max-width: 100%;
+		margin: 0 auto 1rem;
+	}
+	.hide-on-sm {
 		display: none;
 	}
 	@media (min-width: 64rem) {
-		img {
+		.hide-on-sm {
 			display: block;
-			max-width: 100%;
-			margin: 0 auto 1rem;
 		}
 	}
 </style>
