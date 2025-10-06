@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
-	import Link from './pico/Link.svelte';
 	let {
 		children,
 		disabled = false,
@@ -14,24 +13,37 @@
 	} = $props();
 </script>
 
-<button {disabled} class={`${color}`}>
-	{#if disabled}
+{#if disabled}
+	<button
+		type="button"
+		{disabled}
+		class={`${color}`}>
 		{@render children()}
-	{:else}
-		<Link color="white" {href}>{@render children()}</Link>
-	{/if}
-</button>
+	</button>
+{:else}
+	<a
+		{href}
+		class={`${color}`}>
+		{@render children()}
+	</a>
+{/if}
 
 <style>
+	a,
 	button {
 		max-height: 100%;
 		width: 100%;
 		font-size: 1rem;
+		font-family: sans-serif;
 		outline: 0;
 		padding: 0.75rem 1rem;
 		border-radius: 0.25rem;
 		transition: var(--transition);
+		cursor: pointer;
+		text-decoration: none;
+		text-align: center;
 	}
+	a:hover,
 	button:hover {
 		text-decoration: underline;
 	}

@@ -89,9 +89,7 @@
 	<ButtonGroup>
 		<BtnGrp href={resolve('/trainers')}>Trainers</BtnGrp>
 		<BtnGrp href={resolve('/info')}>Info</BtnGrp>
-		<BtnGrp
-			href={resolve('/apply')}
-			disabled={true}>Apply</BtnGrp>
+		<BtnGrp href="https://forms.gle/MXxyyvYGtWpdVGN46">Apply</BtnGrp>
 	</ButtonGroup>
 </Section>
 <Section color="secondary">

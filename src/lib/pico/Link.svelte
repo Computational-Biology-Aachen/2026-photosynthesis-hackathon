@@ -14,11 +14,15 @@
 </script>
 
 {#if disabled}
-	<a {href} class={`${color}`}>
+	<a
+		{href}
+		class={`${color}`}>
 		{@render children()}
 	</a>
 {:else}
-	<a {href} class={`${color}`}>
+	<a
+		{href}
+		class={`${color}`}>
 		{@render children()}
 	</a>
 {/if}

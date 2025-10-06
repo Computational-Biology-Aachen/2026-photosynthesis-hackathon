@@ -1,5 +1,7 @@
 <script>
 	import { base } from '$app/paths';
+	import BtnGrp from '$lib/BtnGrp.svelte';
+	import Link from '$lib/pico/Link.svelte';
 	import Li from '$lib/pico/lists/Li.svelte';
 	import Ul from '$lib/pico/lists/Ul.svelte';
 	import Header from '$lib/pico/sections/Header.svelte';
@@ -37,18 +39,53 @@
 
 				<H6 color="secondary">Announcements</H6>
 				<Text>16.11</Text>
+
+				<br />
+				<BtnGrp href="https://forms.gle/MXxyyvYGtWpdVGN46">Apply now</BtnGrp>
 			</div>
 		</R2>
 	</Section>
 	<Section color="secondary">
 		<H2 color="white">Organizing Committee</H2>
 		<Ul>
-			<Li color="white">Prof. Dr. Anna Matuszyńska / Coordinator</Li>
-			<Li color="white">Dr. Marvin van Aalst, RWTH Aachen</Li>
-			<Li color="white">Dr Johannes Kromdijk, Universitz of Cambridge</Li>
-			<Li color="white">Dr. Sansa Olakunle, IITA</Li>
-			<Li color="white">Dr. Tom Theeuwen, JII</Li>
-			<Li color="white">Prof. Dr. David M. Kramer, JII</Li>
+			<Li color="white"
+				><Link
+					color="white"
+					href="https://computational-biology-aachen.github.io/team/anna-matuszy%C5%84ska"
+					>Prof. Dr. Anna Matuszyńska, RWTH Aachen, Germany</Link
+				></Li>
+			<Li color="white"
+				><Link
+					color="white"
+					href="https://computational-biology-aachen.github.io/team/marvin-van-aalst"
+					>Dr. Marvin van Aalst, RWTH Aachen, Germany</Link
+				></Li>
+			<Li color="white"
+				><Link
+					color="white"
+					href="https://www.plantsci.cam.ac.uk/directory/johannes-kromdijk"
+					>Dr. Johannes Kromdijk, University of Cambridge, United Kingdom</Link
+				></Li>
+			<Li color="white"
+				><Link
+					color="white"
+					href="/">
+					Dr. Sansa Olakunle, International Institute of Tropical Agriculture,
+					Nigeria</Link
+				></Li>
+			<Li color="white"
+				><Link
+					color="white"
+					href="https://www.jan-ingenhousz-institute.org/team/dr.-tom-theeuwen"
+					>Dr. Tom Theeuwen, Jan Ingenhousz Institute Wageningen, Netherlands</Link
+				></Li>
+			<Li color="white"
+				><Link
+					color="white"
+					href="https://www.jan-ingenhousz-institute.org/team/prof.-david-m.-kramer"
+					>Prof. Dr. David M. Kramer, Jan Ingenhousz Institute Wageningen,
+					Netherlands</Link
+				></Li>
 		</Ul>
 	</Section>
 	<Section>
