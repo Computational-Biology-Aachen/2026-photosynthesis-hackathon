@@ -69,7 +69,7 @@
 			<Li color="white"
 				><Link
 					color="white"
-					href="/">
+					href="https://www.iita.org/">
 					Dr. Sansa Olakunle, International Institute of Tropical Agriculture,
 					Nigeria</Link
 				></Li>
