@@ -47,8 +47,8 @@
 			<Text
 				><Bold>Where?</Bold> International Institute of Tropical Agriculture (IITA),
 				Ibadan, Nigeria</Text>
-			<Text><Bold>Registration opens:</Bold> TBA</Text>
-			<Text><Bold>Registration open until:</Bold> 9th of November</Text>
+			<Text><Bold>Registration opens?</Bold> 06.10.2025</Text>
+			<Text><Bold>Registration open until?</Bold> 09.11.2025</Text>
 			<Text
 				>📅 Apply now and be part of a new community driving innovation at the
 				intersection of genetics, physiology, and data.</Text>

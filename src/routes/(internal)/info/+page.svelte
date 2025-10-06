@@ -32,7 +32,7 @@
 				<Text>09. - 13.03.2026</Text>
 
 				<H6 color="secondary">Registration closes</H6>
-				<Text>9.11</Text>
+				<Text>09.11</Text>
 
 				<H6 color="secondary">Shortlisting</H6>
 				<Text>10-15.11</Text>
