@@ -18,7 +18,7 @@
 	import Sponsor from '$lib/Sponsor.svelte';
 
 	import jiiLogo from '$lib/assets/jan-ingenhousz-institute-logo.png';
-	import mcLogo from '$lib/assets/mastercardfoundation.png';
+	import mcLogo from '$lib/assets/mastercard-climate.png';
 </script>
 
 <svelte:head>
@@ -114,7 +114,7 @@
 		hackathon.</Text>
 	<GridSponsor>
 		<Sponsor
-			href="https://www.mastercardfoundation.fund.cam.ac.uk/"
+			href="https://mastercardfdn.org/en/"
 			img={mcLogo} />
 		<Sponsor
 			href="https://www.jan-ingenhousz-institute.org/"
