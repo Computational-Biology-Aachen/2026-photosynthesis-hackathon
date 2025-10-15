@@ -50,7 +50,7 @@
 	</Section>
 	<div class="row">
 			<img
-				src="{base}/dave.png"
+				src="{base}/image003.png"
 				alt="Prof. Dr. David Krammer" />
 			<div>
 				<H1 color="primary">Prof. Dr. David Kramer</H1>
