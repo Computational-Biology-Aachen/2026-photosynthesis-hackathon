@@ -48,21 +48,6 @@
 			</div>
 		</div>
 	</Section>
-	<div class="row">
-			<img
-				src="{base}/image003.png"
-				alt="Prof. Dr. David Krammer" />
-			<div>
-				<H1 color="primary">Prof. Dr. David Kramer</H1>
-				<H4 color="secondary">Founding Scientific Director</H4>
-
-				<H4 color="secondary">Jan IngenHousz Institute (JII)</H4>
-				<Text>
-					David M. Kramer is a leading researcher in photosynthesis, recognized for his pioneering work on its mechanisms and for developing innovative plant phenotyping tools now widely used to study plant performance and environmental responses. He earned his Ph.D. in Biophysics from the University of Illinois and completed a postdoctoral fellowship at the Institut de Biologie Physico-Chimique in Paris. He then held several faculty positions, including Professor at the Institute for Biological Chemistry at Washington State University, before becoming the Hannah Distinguished Professor in Photosynthesis and Bioenergetics at Michigan State University and Special Professor of Integrative Photosynthesis at Wageningen University. In 2023, he was appointed Founding Scientific Director of the Jan IngenHousz Institute in the Netherlands, where he leads an international effort to advance photosynthesis research and sustainable crop improvement through innovations in open science platforms.
-				</Text>
-			</div>
-		</div>
-	</Section>
 	<Section color="secondary">
 		<div class="row">
 			<img
@@ -70,7 +55,8 @@
 				alt="Prof. Dr. David M. Kramer" />
 			<div>
 				<H1 color="white">Prof. Dr. David M. Kramer</H1>
-				<H4 color="white">Jan IngenHousz Institute</H4>
+				<H4 color="white">Founding Sciences Director</H4>
+				<H4 color="white">Jan IngenHousz Institute (JII)</H4>
 				<H4 color="white">Wageningen, Netherlands</H4>
 				<Text color="white">
 					David M. Kramer is a leading researcher in photosynthesis, recognized
@@ -93,7 +79,6 @@
 			</div>
 		</div>
 	</Section>
-
 	<Section color="white">
 		<div class="row">
 			<img
