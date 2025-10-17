@@ -66,13 +66,44 @@
 	<Section color="secondary">
 		<div class="row">
 			<img
+				src="{base}/dave.jpg"
+				alt="Prof. Dr. David M. Kramer" />
+			<div>
+				<H1 color="white">Prof. Dr. David M. Kramer</H1>
+				<H4 color="white">Jan IngenHousz Institute</H4>
+				<H4 color="white">Wageningen, Netherlands</H4>
+				<Text color="white">
+					David M. Kramer is a leading researcher in photosynthesis, recognized
+					for his pioneering work on its mechanisms and for developing
+					innovative plant phenotyping tools now widely used to study plant
+					performance and environmental responses. He earned his Ph.D. in
+					Biophysics from the University of Illinois and completed a
+					postdoctoral fellowship at the Institut de Biologie Physico-Chimique
+					in Paris. He then held several faculty positions, including Professor
+					at the Institute for Biological Chemistry at Washington State
+					University, before becoming the Hannah Distinguished Professor in
+					Photosynthesis and Bioenergetics at Michigan State University and
+					Special Professor of Integrative Photosynthesis at Wageningen
+					University. In 2023, he was appointed Founding Scientific Director of
+					the Jan IngenHousz Institute in the Netherlands, where he leads an
+					international effort to advance photosynthesis research and
+					sustainable crop improvement through innovations in open science
+					platforms.
+				</Text>
+			</div>
+		</div>
+	</Section>
+
+	<Section color="white">
+		<div class="row">
+			<img
 				src="{base}/johannes.jpg"
 				alt="Dr. Johannes Kromdijk" />
 			<div>
-				<H1 color="white">Dr. Johannes Kromdijk</H1>
-				<H4 color="white">University of Cambridge</H4>
-				<H4 color="white">United Kingdom</H4>
-				<Text color="white">
+				<H1 color="primary">Dr. Johannes Kromdijk</H1>
+				<H4 color="secondary">University of Cambridge</H4>
+				<H4 color="secondary">United Kingdom</H4>
+				<Text color="black">
 					Growing up in an area of The Netherlands with an abundance of
 					glasshouses, Johannes became interested in plants at an early age. He
 					obtained his BSc and MSc in Plant Sciences at Wageningen University
@@ -98,17 +129,17 @@
 			</div>
 		</div>
 	</Section>
-	<Section>
+	<Section color="secondary">
 		<div class="row">
 			<img
 				src="{base}/marvin.png"
 				alt="Dr. Marvin van Aalst" />
 			<div>
-				<H1 color="primary">Dr. Marvin van Aalst</H1>
-				<H4 color="secondary">Computational Life Science</H4>
-				<H4 color="secondary">Department of Biology</H4>
-				<H4 color="secondary">RWTH Aachen University Germany</H4>
-				<Text>
+				<H1 color="white">Dr. Marvin van Aalst</H1>
+				<H4 color="white">Computational Life Science</H4>
+				<H4 color="white">Department of Biology</H4>
+				<H4 color="white">RWTH Aachen University Germany</H4>
+				<Text color="white">
 					Marvin is a software architect and computational biologist working on
 					building scientific software and quantitative models based on
 					differential equations. He is currently working as a research software
@@ -121,18 +152,18 @@
 		</div>
 	</Section>
 
-	<Section color="secondary">
+	<Section color="white">
 		<div class="row">
 			<img
 				src="{base}/sansa.jpg"
 				alt="Dr. Olakunle Sansa" />
 			<div>
-				<H1 color="white">Dr. Olakunle Sansa</H1>
-				<H4 color="white">Genetic Resources Center</H4>
-				<H4 color="white">International Institute of Tropical Agriculture</H4>
-				<H4 color="white">Nigeria</H4>
-
-				<Text color="white">
+				<H1 color="primary">Dr. Olakunle Sansa</H1>
+				<H4 color="secondary">Genetic Resources Center</H4>
+				<H4 color="secondary"
+					>International Institute of Tropical Agriculture</H4>
+				<H4 color="secondary">Nigeria</H4>
+				<Text color="black">
 					Olakunle Sansa holds a bachelors degree in Plant breeding and Seed
 					Technology as well as an MSc and PhD in Plant Breeding from the
 					Federal University of Agriculture, Abeokuta, Nigeria. In 2020, He
@@ -151,6 +182,39 @@
 					the capacity of African researchers and supporting smallholder farmers
 					for improved livelihood and sustainable food production in sub-Saharan
 					Africa.
+				</Text>
+			</div>
+		</div>
+	</Section>
+
+	<Section color="secondary">
+		<div class="row">
+			<img
+				src="{base}/tom.jpg"
+				alt="Dr. Tom Theeuwen" />
+			<div>
+				<H1 color="white">Dr. Tom Theeuwen</H1>
+				<H4 color="white">Jan IngenHousz Institute</H4>
+				<H4 color="white">Wageningen, Netherlands</H4>
+				<Text color="white">
+					Tom is highly motivated to use genetics to gain new insights into
+					photosynthetic functioning in crops. His foundation in this field was
+					established during his BSc and MSc in Plant Sciences and Plant
+					Biotechnology at Wageningen University & Research, where he
+					specialized in statistics and bioinformatics. During an internship at
+					the Australian Centre for Plant Functional Genomics, he applied this
+					expertise to investigate drought tolerance in durum wheat. He was
+					later awarded his own PhD proposal by the Dutch Research Council
+					(NWO), during which he developed and applied a novel method to study
+					the contribution of organellar genetic variation to photosynthetic
+					phenotypes. During his PhD he contributed significantly to the design
+					and construction of the climate chamber module at the Netherlands
+					Plant Eco-physiology Centre. Since September 2023, Tom has been a
+					Research Fellow at the Jan IngenHousz Institute, where he uses genetic
+					variation to study photosynthetic limitations to biomass production.
+					Together with a multidisciplinary team, he is developing methods to
+					identify these limitations by using state-of-the-art wearable sensors
+					that continuously monitor photosynthesis in field-grown crops.
 				</Text>
 			</div>
 		</div>
