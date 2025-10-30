@@ -24,7 +24,7 @@
 				Prof. Dr. Anna B. Matuszyńska <br />
 				Design und Umsetzung Dr. Marvin van Aalst <Link
 					color="white"
-					href="https://github.com/Computational-Biology-Aachen/Computational-Biology-Aachen.github.io"
+					href="https://github.com/Computational-Biology-Aachen/2026-photosynthesis-hackathon"
 					><Fa icon={faGithub} /></Link
 				><br />
 				(c) 2025 Prof. Dr. Anna B. Matuszyńska, Alle Rechte vorbehalten.

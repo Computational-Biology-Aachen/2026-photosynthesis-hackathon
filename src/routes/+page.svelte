@@ -13,6 +13,7 @@
 	import Bold from '$lib/pico/text/Bold.svelte';
 	import H1 from '$lib/pico/text/H1.svelte';
 	import H2 from '$lib/pico/text/H2.svelte';
+	import Italic from '$lib/pico/text/Italic.svelte';
 	import Text from '$lib/pico/text/Text.svelte';
 	import R2 from '$lib/R2.svelte';
 	import Sponsor from '$lib/Sponsor.svelte';
@@ -104,12 +105,13 @@
 		></Button>
 </Section>
 <Section color="white">
-	<H2 color="secondary">Sponsors</H2>
+	<H2 color="secondary">Partners</H2>
 	<Text
-		>We would like to thank the the Mastercard Foundation and University of
-		Cambridge Climate Resilience and Sustainability Research Fund JanIngenhousz
-		Intitute under JII Open Challenge Fund for the generous funding of this
-		hackathon.</Text>
+		>We would like to thank our partners of the <Italic
+			>Mastercard Foundation and University of Cambridge Climate Resilience and
+			Sustainability Research Fund</Italic> and the <Italic
+			>JanIngenhousz Intitute under JII Open Challenge Fund</Italic> for the generous
+		funding of this hackathon.</Text>
 	<GridSponsor>
 		<Sponsor
 			href="https://mastercardfdn.org/en/"
