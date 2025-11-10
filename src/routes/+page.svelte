@@ -20,6 +20,7 @@
 
 	import jiiLogo from '$lib/assets/jan-ingenhousz-institute-logo.png';
 	import mcLogo from '$lib/assets/mastercard-climate.png';
+	import Strikethrough from '$lib/pico/text/Strikethrough.svelte';
 </script>
 
 <svelte:head>
@@ -48,8 +49,17 @@
 			<Text
 				><Bold>Where?</Bold> International Institute of Tropical Agriculture (IITA),
 				Ibadan, Nigeria</Text>
-			<Text><Bold>Registration opens?</Bold> 06.10.2025</Text>
-			<Text><Bold>Registration open until?</Bold> 09.11.2025</Text>
+			<!-- <Text><Bold>Registration opens?</Bold> 06.10.2025</Text> -->
+			<div style="background-color: var(--primary); padding: 1rem;">
+				<Text
+					color="white"
+					padding="none"
+					><Bold>REGISTRATION EXTENDED</Bold>
+				</Text>
+			</div>
+			<Text
+				><Bold>Registration open until?</Bold>
+				<Strikethrough>09.11.2025</Strikethrough> 16.11.2025</Text>
 			<Text
 				>📅 Apply now and be part of a new community driving innovation at the
 				intersection of genetics, physiology, and data.</Text>

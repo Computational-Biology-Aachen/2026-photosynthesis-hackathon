@@ -2,24 +2,34 @@
 	import type { Snippet } from 'svelte';
 	let {
 		children,
-		color = 'black'
+		color = 'black',
+		padding = 'lower'
 	}: {
 		children: Snippet;
 		color?: 'black' | 'white' | 'primary' | 'secondary';
+		padding?: 'lower' | 'all' | 'none';
 	} = $props();
 </script>
 
-<p class={`${color}`}>
+<p class={`${color} ${padding}`}>
 	{@render children()}
 </p>
 
 <style>
 	p {
 		font-size: 1rem;
-		margin: 0 0 var(--text-ypad) 0;
 		font-family: var(--font-family);
 		text-align: justify;
 		hyphens: auto;
+	}
+	.lower {
+		margin: 0 0 var(--text-ypad) 0;
+	}
+	.all {
+		margin: calc(var(--text-ypad) * 0.5);
+	}
+	.none {
+		margin: 0;
 	}
 	.black {
 		color: var(--black);
