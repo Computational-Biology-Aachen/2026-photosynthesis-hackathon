@@ -41,7 +41,11 @@
 				<Text>16.11</Text>
 
 				<br />
-				<BtnGrp href="https://forms.gle/MXxyyvYGtWpdVGN46">Apply now</BtnGrp>
+				<!-- <BtnGrp href="https://forms.gle/MXxyyvYGtWpdVGN46">Apply now</BtnGrp> -->
+				<BtnGrp
+					disabled
+					href="/"
+					>Registration closed - thanks for all your submissions</BtnGrp>
 			</div>
 		</R2>
 	</Section>
@@ -134,10 +138,10 @@
 			International House, IITA Headquarters, Ibadan, Nigeria
 		</Text>
 	</Section>
-	<Section>
+	<!-- <Section>
 		<H2>Data</H2>
 		<Text>Describe the JII and obtained data here.</Text>
-	</Section>
+	</Section> -->
 </Main>
 
 <style>
