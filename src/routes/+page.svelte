@@ -49,6 +49,14 @@
 				><Bold>Where?</Bold> International Institute of Tropical Agriculture (IITA),
 				Ibadan, Nigeria</Text>
 			<!-- <Text><Bold>Registration opens?</Bold> 06.10.2025</Text> -->
+
+			<!-- <Text
+				><Bold>Registration open until?</Bold>
+				<Strikethrough>09.11.2025</Strikethrough> 16.11.2025</Text>
+			<Text
+				>📅 Apply now and be part of a new community driving innovation at the
+				intersection of genetics, physiology, and data.</Text> -->
+
 			<!-- <div style="background-color: var(--primary); padding: 1rem;">
 				<Text
 					color="white"
@@ -56,12 +64,6 @@
 					><Bold>REGISTRATION EXTENDED</Bold>
 				</Text>
 			</div> -->
-			<!-- <Text
-				><Bold>Registration open until?</Bold>
-				<Strikethrough>09.11.2025</Strikethrough> 16.11.2025</Text>
-			<Text
-				>📅 Apply now and be part of a new community driving innovation at the
-				intersection of genetics, physiology, and data.</Text> -->
 			<BtnGrp
 				disabled
 				href="/">Registration closed - thanks for all your submissions</BtnGrp>
@@ -102,7 +104,10 @@
 	<ButtonGroup>
 		<BtnGrp href={resolve('/trainers')}>Trainers</BtnGrp>
 		<BtnGrp href={resolve('/info')}>Info</BtnGrp>
-		<BtnGrp href="https://forms.gle/MXxyyvYGtWpdVGN46">Apply</BtnGrp>
+		<!-- <BtnGrp href="https://forms.gle/MXxyyvYGtWpdVGN46">Apply</BtnGrp> -->
+		<BtnGrp
+			disabled
+			href="/">Registration closed</BtnGrp>
 	</ButtonGroup>
 </Section>
 <Section color="secondary">
