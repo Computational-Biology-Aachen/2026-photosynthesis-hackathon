@@ -175,13 +175,40 @@
 	<Section color="secondary">
 		<div class="row">
 			<img
-				src="{base}/tom.jpg"
-				alt="Dr. Tom Theeuwen" />
+				src="{base}/olivia.png"
+				alt="Dr. Olivia Kacheyo" />
 			<div>
-				<H1 color="white">Dr. Tom Theeuwen</H1>
+				<H1 color="white">Dr. Olivia Kacheyo</H1>
 				<H4 color="white">Jan IngenHousz Institute</H4>
 				<H4 color="white">Wageningen, Netherlands</H4>
 				<Text color="white">
+					Olivia is a post-doc at the Jan IngenHousz Institute. Her project
+					assesses how photosynthesis is related to yield while accounting for
+					environmental, phenological and other factors that influence
+					photosynthesis measurements under field conditions. Specifically, the
+					project aims to assess the availability of naturally occurring genetic
+					variation for photosynthetic traits in diverse populations of barley
+					and potato under field conditions by measuring photosynthesis at
+					different crop growth stages across the growing season. Currently
+					field photosynthesis data are collected using handheld devices but are
+					soon to be replaced with real time monitoring sensors that will
+					continuously measure photosynthesis throughout the crops life cycle in
+					the field.
+				</Text>
+			</div>
+		</div>
+	</Section>
+
+	<Section color="white">
+		<div class="row">
+			<img
+				src="{base}/tom.jpg"
+				alt="Dr. Tom Theeuwen" />
+			<div>
+				<H1 color="primary">Dr. Tom Theeuwen</H1>
+				<H4 color="secondary">Jan IngenHousz Institute</H4>
+				<H4 color="secondary">Wageningen, Netherlands</H4>
+				<Text color="black">
 					Tom is highly motivated to use genetics to gain new insights into
 					photosynthetic functioning in crops. His foundation in this field was
 					established during his BSc and MSc in Plant Sciences and Plant
