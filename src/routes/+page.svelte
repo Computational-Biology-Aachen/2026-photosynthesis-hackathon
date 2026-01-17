@@ -47,7 +47,7 @@
 			<Text><Bold>When?</Bold> 09. - 13.03.2026</Text>
 			<Text
 				><Bold>Where?</Bold> International Institute of Tropical Agriculture (IITA),
-				Ibadan, Nigeria</Text>
+				Accra, Ghana (moved from Ibadan, Nigeria)</Text>
 			<!-- <Text><Bold>Registration opens?</Bold> 06.10.2025</Text> -->
 
 			<!-- <Text
@@ -71,7 +71,7 @@
 	</R2>
 	<Text
 		>The hackathon is hosted at the International Institute of Tropical
-		Agriculture (IITA) in Ibadan, Nigeria. <Bold
+		Agriculture (IITA) in Accra, Ghana. <Bold
 			>Travel support may be available for selected participants</Bold
 		>.</Text>
 	<Text>Over five days, participants will</Text>

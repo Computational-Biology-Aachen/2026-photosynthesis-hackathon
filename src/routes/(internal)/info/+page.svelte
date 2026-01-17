@@ -132,10 +132,10 @@
 		</R2>
 		<Text color="white">
 			<Bold>Venue</Bold><br />
-			International Institute of Tropical Agriculture (IITA) Headquarters PMB 5320,
-			Oyo Road, Ibadan, Oyo State, Nigeria.<br /><br />
-			<Bold>Accomodation</Bold><br />
-			International House, IITA Headquarters, Ibadan, Nigeria
+			International Institute of Tropical Agriculture (IITA) CSIR Campus opp. Old
+			Chinese Embassy Off Agostino Neto Road, Airport Residential Area Accra, Ghana<br /><br />
+			<!-- <Bold>Accomodation</Bold><br /> -->
+			<!-- International House, IITA Headquarters, Ibadan, Nigeria -->
 		</Text>
 	</Section>
 	<!-- <Section>
