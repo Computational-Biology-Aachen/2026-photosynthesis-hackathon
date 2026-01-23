@@ -1,6 +1,6 @@
 <script>
 	import { base } from '$app/paths';
-	import BtnGrp from '$lib/BtnGrp.svelte';
+	import BtnGrp from '$lib/buttons/BtnGrp.svelte';
 	import Link from '$lib/Link.svelte';
 	import Li from '$lib/lists/Li.svelte';
 	import Ul from '$lib/lists/Ul.svelte';

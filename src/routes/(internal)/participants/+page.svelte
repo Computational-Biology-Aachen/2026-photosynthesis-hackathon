@@ -14,7 +14,7 @@
 
 <Header>
 	<H1 color="white">Participants</H1>
-	<Text color="white">...</Text>
+	<Text color="white">Get to know all the participants in this hackathon.</Text>
 </Header>
 <Main>
 	<Section>

@@ -1,17 +1,17 @@
 <script>
 	import { resolve } from '$app/paths';
-	import BtnGrp from '$lib/BtnGrp.svelte';
-	import Button from '$lib/Button.svelte';
-	import ButtonGroup from '$lib/ButtonGroup.svelte';
-	import Footer from '$lib/Footer.svelte';
+	import BtnGrp from '$lib/buttons/BtnGrp.svelte';
+	import Button from '$lib/buttons/Button.svelte';
+	import ButtonGroup from '$lib/buttons/ButtonGroup.svelte';
+	import Sponsor from '$lib/cards/Sponsor.svelte';
 	import GridSponsor from '$lib/GridSponsor.svelte';
-	import Hero from '$lib/Hero.svelte';
 	import Link from '$lib/Link.svelte';
 	import Li from '$lib/lists/Li.svelte';
 	import Ul from '$lib/lists/Ul.svelte';
 	import R2 from '$lib/R2.svelte';
+	import Footer from '$lib/sections/Footer.svelte';
+	import Hero from '$lib/sections/Hero.svelte';
 	import Section from '$lib/sections/Section.svelte';
-	import Sponsor from '$lib/Sponsor.svelte';
 	import Bold from '$lib/text/Bold.svelte';
 	import H1 from '$lib/text/H1.svelte';
 	import H2 from '$lib/text/H2.svelte';
