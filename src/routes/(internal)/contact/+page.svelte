@@ -1,13 +1,13 @@
 <script>
 	import { base } from '$app/paths';
-	import Header from '$lib/pico/sections/Header.svelte';
-	import Main from '$lib/pico/sections/Main.svelte';
-	import Section from '$lib/pico/sections/Section.svelte';
-	import H1 from '$lib/pico/text/H1.svelte';
-	import H2 from '$lib/pico/text/H2.svelte';
-	import H6 from '$lib/pico/text/H6.svelte';
-	import Text from '$lib/pico/text/Text.svelte';
 	import R2 from '$lib/R2.svelte';
+	import Header from '$lib/sections/Header.svelte';
+	import Main from '$lib/sections/Main.svelte';
+	import Section from '$lib/sections/Section.svelte';
+	import H1 from '$lib/text/H1.svelte';
+	import H2 from '$lib/text/H2.svelte';
+	import H6 from '$lib/text/H6.svelte';
+	import Text from '$lib/text/Text.svelte';
 </script>
 
 <Header>

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Link from './pico/Link.svelte';
-	import H2 from './pico/text/H2.svelte';
-	import Text from './pico/text/Text.svelte';
+	import Link from './Link.svelte';
+	import H2 from './text/H2.svelte';
+	import Text from './text/Text.svelte';
 
 	import { faGithub } from '@fortawesome/free-brands-svg-icons';
 	import Fa from 'svelte-fa';

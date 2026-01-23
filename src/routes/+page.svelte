@@ -1,22 +1,22 @@
 <script>
 	import { resolve } from '$app/paths';
 	import BtnGrp from '$lib/BtnGrp.svelte';
+	import Button from '$lib/Button.svelte';
 	import ButtonGroup from '$lib/ButtonGroup.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import GridSponsor from '$lib/GridSponsor.svelte';
 	import Hero from '$lib/Hero.svelte';
-	import Button from '$lib/pico/Button.svelte';
-	import Link from '$lib/pico/Link.svelte';
-	import Li from '$lib/pico/lists/Li.svelte';
-	import Ul from '$lib/pico/lists/Ul.svelte';
-	import Section from '$lib/pico/sections/Section.svelte';
-	import Bold from '$lib/pico/text/Bold.svelte';
-	import H1 from '$lib/pico/text/H1.svelte';
-	import H2 from '$lib/pico/text/H2.svelte';
-	import Italic from '$lib/pico/text/Italic.svelte';
-	import Text from '$lib/pico/text/Text.svelte';
+	import Link from '$lib/Link.svelte';
+	import Li from '$lib/lists/Li.svelte';
+	import Ul from '$lib/lists/Ul.svelte';
 	import R2 from '$lib/R2.svelte';
+	import Section from '$lib/sections/Section.svelte';
 	import Sponsor from '$lib/Sponsor.svelte';
+	import Bold from '$lib/text/Bold.svelte';
+	import H1 from '$lib/text/H1.svelte';
+	import H2 from '$lib/text/H2.svelte';
+	import Italic from '$lib/text/Italic.svelte';
+	import Text from '$lib/text/Text.svelte';
 
 	import jiiLogo from '$lib/assets/jan-ingenhousz-institute-logo.png';
 	import mcLogo from '$lib/assets/mastercard-climate.png';

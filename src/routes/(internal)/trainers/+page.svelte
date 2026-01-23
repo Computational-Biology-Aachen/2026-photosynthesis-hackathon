@@ -1,11 +1,11 @@
 <script>
 	import { base } from '$app/paths';
-	import Header from '$lib/pico/sections/Header.svelte';
-	import Main from '$lib/pico/sections/Main.svelte';
-	import Section from '$lib/pico/sections/Section.svelte';
-	import H1 from '$lib/pico/text/H1.svelte';
-	import H4 from '$lib/pico/text/H4.svelte';
-	import Text from '$lib/pico/text/Text.svelte';
+	import Header from '$lib/sections/Header.svelte';
+	import Main from '$lib/sections/Main.svelte';
+	import Section from '$lib/sections/Section.svelte';
+	import H1 from '$lib/text/H1.svelte';
+	import H4 from '$lib/text/H4.svelte';
+	import Text from '$lib/text/Text.svelte';
 </script>
 
 <Header>
@@ -117,7 +117,7 @@
 	<Section color="secondary">
 		<div class="row">
 			<img
-				src="{base}/marvin.png"
+				src="{base}/marvin.jpg"
 				alt="Dr. Marvin van Aalst" />
 			<div>
 				<H1 color="white">Dr. Marvin van Aalst</H1>
