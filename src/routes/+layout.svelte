@@ -45,4 +45,18 @@
 		name="Contact" />
 </Nav>
 
-{@render children()}
+<main>
+	{@render children()}
+</main>
+
+<style>
+	main {
+		padding: 0;
+	}
+
+	@media (min-width: 800px) {
+		main {
+			padding-top: 3rem;
+		}
+	}
+</style>
