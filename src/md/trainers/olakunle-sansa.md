@@ -5,6 +5,7 @@ city: "International Institute of Tropical Agriculture"
 country: "Nigeria"
 ---
 
+## About Sansa
 
 Olakunle Sansa holds a bachelors degree in Plant breeding and Seed
 Technology as well as an MSc and PhD in Plant Breeding from the

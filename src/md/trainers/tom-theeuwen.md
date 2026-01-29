@@ -5,6 +5,8 @@ city: "Wageningen"
 country: "Netherlands"
 ---
 
+## About Tom
+
 Tom is highly motivated to use genetics to gain new insights into
 photosynthetic functioning in crops. His foundation in this field was
 established during his BSc and MSc in Plant Sciences and Plant

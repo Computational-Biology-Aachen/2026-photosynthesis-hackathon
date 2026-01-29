@@ -5,6 +5,8 @@ city: "Wageningen"
 country: "Netherlands"
 ---
 
+## About David
+
 David M. Kramer is a leading researcher in photosynthesis, recognized
 for his pioneering work on its mechanisms and for developing
 innovative plant phenotyping tools now widely used to study plant

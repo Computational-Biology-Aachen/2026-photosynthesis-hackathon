@@ -4,6 +4,8 @@ affiliation: "University of Cambridge"
 country: "United Kingdom"
 ---
 
+## About Johannes
+
 Growing up in an area of The Netherlands with an abundance of
 glasshouses, Johannes became interested in plants at an early age. He
 obtained his BSc and MSc in Plant Sciences at Wageningen University

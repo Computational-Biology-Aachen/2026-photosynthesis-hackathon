@@ -10,6 +10,8 @@ website: "https://marvinvanaalst.github.io/"
 orcid: "https://orcid.org/0000-0002-7434-0249"
 ---
 
+## About Marvin
+
 Marvin is a software architect and computational biologist working on
 building scientific software and quantitative models based on
 differential equations. He is currently working as a research software
@@ -17,21 +19,6 @@ engineer at RWTH University Germany. Marvin recreationally develops
 web applications. In addition, he has national and international
 teaching experience, having taught introductory courses in
 mathematical modeling, computation and systems biology.
-
-
-
-
-<!-- # About me
-
-> I'm a research software engineer focused on making mathematical modeling easier to use and more robust.
-
-In particular I focus on enabling using **mechanistic learning**, which is the intersection of mechanistic modellig and machine learning.
-This requires a knowledge of a board range of techniques and theories.
-
-My aim is to make robust tools that make it easier to work with this approach such that the entire community can benefit from it.
-With these tools I hope to build a much needed bridge between experimental biologists and theoreticians.
-
-I'm always open to chat so feel free to contact me! -->
 
 
 ## Professional Career

@@ -10,44 +10,29 @@ city: "RWTH Aachen University"
 country: "Germany"
 ---
 
+## About Anna
 
-<!-- <div class="row">
-    <img
-        src="{base}/anna.png"
-        alt="Prof. Dr. Anna Matuszyńska" />
-    <div>
-        <Text>
-            Prof. Anna is a highly skilled mathematician who holds a second
-            diploma in pharmacy. Her expertise lies in the development of dynamic
-            models for biological processes. She completed her mathematics degree
-            at Gdansk University of Technology in 2011 and gained valuable
-            experience as a cost allocation specialist in a liability portfolio
-            company prior to pursuing further education. In 2016, Prof. Anna
-            obtained her PhD in computational biology from Heinrich-Heine
-            University Düsseldorf. Her doctoral research focused on computational
-            models pertaining to the light acclimation of photosynthetic
-            organisms. Since November 2021, Prof. Anna has been serving as a
-            professor at RWTH Aachen University, where she leads a computational
-            life science lab. Her research team utilizes a variety of
-            computational techniques to explore diverse areas, including in silico
-            investigations of photosynthesis (ranging from plants to algae and
-            cyanobacteria), carbon metabolism, cell bioenergetics, and organism
-            interactions. Additionally, Prof. Anna actively engages in public
-            dissemination of her work and participates in outreach activities. She
-            is a passionate advocate for open science, promoting transparency and
-            accessibility in research. Alongside her professional endeavors, Prof.
-            Anna cherishes her role as a mother to two remarkable children.
-        </Text>
-    </div>
-</div> -->
+Prof. Anna is a highly skilled mathematician who holds a second
+diploma in pharmacy. Her expertise lies in the development of dynamic
+models for biological processes. She completed her mathematics degree
+at Gdansk University of Technology in 2011 and gained valuable
+experience as a cost allocation specialist in a liability portfolio
+company prior to pursuing further education. In 2016, Prof. Anna
+obtained her PhD in computational biology from Heinrich-Heine
+University Düsseldorf. Her doctoral research focused on computational
+models pertaining to the light acclimation of photosynthetic
+organisms. Since November 2021, Prof. Anna has been serving as a
+professor at RWTH Aachen University, where she leads a computational
+life science lab. Her research team utilizes a variety of
+computational techniques to explore diverse areas, including in silico
+investigations of photosynthesis (ranging from plants to algae and
+cyanobacteria), carbon metabolism, cell bioenergetics, and organism
+interactions. Additionally, Prof. Anna actively engages in public
+dissemination of her work and participates in outreach activities. She
+is a passionate advocate for open science, promoting transparency and
+accessibility in research. Alongside her professional endeavors, Prof.
+Anna cherishes her role as a mother to two remarkable children.
 
-## About me
-
-I bridge quantitative biology, mathematical modelling and machine learning (mechanistic learning), with collaborative research to uncover the universal principles that govern temporal adaptation in plants and photosynthetic bacteria (a preprint and Python package coming soon!).
-
-I am dedicated to making science inclusive and accessible. Highlights include developing an interactive simulation-based learning platform to teach photosynthesis through modelling and organizing international summer school in East Africa. By empowering others to integrate computational methods into their research I aim at creating sustainable knowledge hubs beyond my own scientific field.
-
-I teach others how to integrate computational methods into their research using project-based approaches, a work recognized with the Department's Teaching Prize in 2022!
 
 ## Professional Career
 
