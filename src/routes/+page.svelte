@@ -19,7 +19,7 @@
 	import Text from '$lib/text/Text.svelte';
 
 	import jiiLogo from '$lib/assets/jan-ingenhousz-institute-logo.png';
-	import mcLogo from '$lib/assets/mastercard-climate.png';
+	import mcLogo from '$lib/assets/mastercard-cambridge.png';
 </script>
 
 <svelte:head>
