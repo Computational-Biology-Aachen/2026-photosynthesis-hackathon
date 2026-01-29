@@ -28,8 +28,9 @@
 		padding: 0;
 		background-color: var(--white);
 		font-family: var(--font-family);
-		position: sticky;
+		position: fixed;
 		top: 0;
+		width: 100%;
 		z-index: 1000;
 	}
 	.inner {

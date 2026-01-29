@@ -1,5 +1,8 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import * as config from '$lib/config';
+	import Nav from '$lib/nav/Nav.svelte';
+	import NavItem from '$lib/nav/NavItem.svelte';
 	import '../app.css';
 
 	let { children } = $props();
@@ -26,5 +29,20 @@
 		name="twitter:card"
 		content="summary" />
 </svelte:head>
+
+<Nav>
+	<NavItem
+		href="{base}/"
+		name="Home" />
+	<NavItem
+		href="{base}/trainers"
+		name="Trainers" />
+	<NavItem
+		href="{base}/info"
+		name="Info" />
+	<NavItem
+		href="{base}/contact"
+		name="Contact" />
+</Nav>
 
 {@render children()}
