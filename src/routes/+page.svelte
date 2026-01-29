@@ -1,7 +1,6 @@
 <script>
-	import { resolve } from '$app/paths';
+	import { base, resolve } from '$app/paths';
 	import BtnGrp from '$lib/buttons/BtnGrp.svelte';
-	import Button from '$lib/buttons/Button.svelte';
 	import ButtonGroup from '$lib/buttons/ButtonGroup.svelte';
 	import Sponsor from '$lib/cards/Sponsor.svelte';
 	import GridSponsor from '$lib/GridSponsor.svelte';
@@ -103,24 +102,52 @@
 
 	<ButtonGroup>
 		<BtnGrp href={resolve('/trainers')}>Trainers</BtnGrp>
-		<BtnGrp href={resolve('/info')}>Info</BtnGrp>
-		<!-- <BtnGrp href="https://forms.gle/MXxyyvYGtWpdVGN46">Apply</BtnGrp> -->
 		<BtnGrp
 			disabled
-			href="/">Registration closed</BtnGrp>
+			href={resolve('/challenge')}>Challenge</BtnGrp>
+		<BtnGrp
+			disabled
+			href="/participants">Participants</BtnGrp>
 	</ButtonGroup>
 </Section>
 <Section color="secondary">
-	<H2 color="white">Questions</H2>
-	<Text color="white"
-		>Whether you're curious about features, research, or publication, we're here
-		to answer any questions.</Text>
-	<Button
-		><Link
-			color="white"
-			href={resolve('/contact')}>Let's Talk Now</Link
-		></Button>
+	<H2 color="white">Organizing Committee</H2>
+	<Ul>
+		<Li color="white"
+			><Link
+				color="white"
+				href="https://computational-biology-aachen.github.io/team/anna-matuszy%C5%84ska"
+				>Prof. Dr. Anna Matuszyńska, RWTH Aachen, Germany</Link
+			></Li>
+		<Li color="white"
+			><Link
+				color="white"
+				href="https://www.jan-ingenhousz-institute.org/team/prof.-david-m.-kramer"
+				>Prof. Dr. David M. Kramer, Jan Ingenhousz Institute Wageningen,
+				Netherlands</Link
+			></Li>
+		<Li color="white"
+			><Link
+				color="white"
+				href="https://computational-biology-aachen.github.io/team/marvin-van-aalst"
+				>Dr. Marvin van Aalst, RWTH Aachen, Germany</Link
+			></Li>
+		<Li color="white"
+			><Link
+				color="white"
+				href="https://www.plantsci.cam.ac.uk/directory/johannes-kromdijk"
+				>Dr. Johannes Kromdijk, University of Cambridge, United Kingdom</Link
+			></Li>
+		<Li color="white"
+			><Link
+				color="white"
+				href="https://www.iita.org/">
+				Dr. Sansa Olakunle, International Institute of Tropical Agriculture,
+				Nigeria</Link
+			></Li>
+	</Ul>
 </Section>
+
 <Section color="white">
 	<H2 color="secondary">Partners</H2>
 	<Text
@@ -137,6 +164,52 @@
 			href="https://www.jan-ingenhousz-institute.org/"
 			img={jiiLogo} />
 	</GridSponsor>
+</Section>
+<Section color="primary">
+	<H2 color="white">Host</H2>
+	<R2>
+		<img
+			src="{base}/iita.jpg"
+			alt="iita" />
+
+		<div>
+			<Text color="white"
+				>The International Institute of Tropical Agriculture (<Bold>IITA</Bold>)
+				is a leading non-profit research for development institution and a
+				member of CGIAR, providing agricultural innovations that address
+				Africa's most pressing challenges, including climate change, hunger,
+				malnutrition, and poverty. IITA headquarters is located in Ibadan, Oyo
+				state, Nigeria, with five regional hubs and several research stations
+				across Africa, IITA's main priority is to transform African agriculture,
+				improve farmers' livelihoods, and ensure a food secure future for
+				sub-Saharan Africa.</Text>
+		</div>
+	</R2>
+	<!-- <Text color="white"> -->
+	<!-- <Bold>Venue</Bold><br /> -->
+	<!-- International Institute of Tropical Agriculture (IITA) CSIR Campus opp. Old Chinese -->
+	<!-- Embassy Off Agostino Neto Road, Airport Residential Area Accra, Ghana<br /><br /> -->
+	<!-- <Bold>Accomodation</Bold><br /> -->
+	<!-- International House, IITA Headquarters, Ibadan, Nigeria -->
+	<!-- </Text> -->
+</Section>
+<Section>
+	<H2>Program overview</H2>
+	<Text>The event runs over <Bold>five days</Bold>:</Text>
+	<Ul>
+		<Li
+			><Bold>Days 1-2:</Bold> Interactive lectures and hands-on sessions introduce
+			the challenge and datasets, ensuring all participants share a common foundation.</Li>
+		<Li
+			><Bold>Days 3-4 (first half):</Bold> Teams work intensively on the hackathon
+			challenge, developing solutions and preparing their pitches.</Li>
+		<Li
+			><Bold>Day 4 (second half):</Bold> Final presentations take place at an open
+			outreach event for the host institution and wider community.</Li>
+		<Li
+			><Bold>Day 5:</Bold> Participants shape follow-up actions and explore opportunities
+			for continued collaboration</Li>
+	</Ul>
 </Section>
 
 <Footer />
