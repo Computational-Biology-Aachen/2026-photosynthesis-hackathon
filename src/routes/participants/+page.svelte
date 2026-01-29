@@ -4,10 +4,11 @@
 	import Section from '$lib/sections/Section.svelte';
 	import H1 from '$lib/text/H1.svelte';
 	import Text from '$lib/text/Text.svelte';
-	import type { Member } from '$lib/types';
+	import type { Participant } from '$lib/types';
 
 	let { data } = $props();
-	let members: Member[] = data.members;
+	let members: Participant[] = data.members;
+	const link = 'participants';
 </script>
 
 <Header>
@@ -20,6 +21,7 @@
 		{#each members as { slug, name }}
 			<PersonCard
 				title={name}
+				{link}
 				{slug}>
 			</PersonCard>
 		{/each}

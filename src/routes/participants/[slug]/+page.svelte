@@ -3,7 +3,7 @@
 	import Section from '$lib/sections/Section.svelte';
 	import H1 from '$lib/text/H1.svelte';
 	import Text from '$lib/text/Text.svelte';
-	import type { Member } from '$lib/types';
+	import type { Participant } from '$lib/types';
 	import {
 		faGithub,
 		faGitlab,
@@ -19,7 +19,7 @@
 	});
 
 	let { data } = $props();
-	let person: Member = data.meta;
+	let person: Participant = data.meta;
 
 	let filename = `/people/${data.slug.split('/').at(-1)}.jpg`;
 	let img: string =

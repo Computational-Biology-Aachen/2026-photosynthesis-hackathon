@@ -2,7 +2,7 @@ import { error } from '@sveltejs/kit';
 
 export async function load({ params }) {
 	try {
-		const member = await import(`../../../md/team/${params.slug}.md`);
+		const member = await import(`../../../md/participants/${params.slug}.md`);
 
 		return {
 			content: member.default,

@@ -38,8 +38,13 @@
 		href="{base}/trainers"
 		name="Trainers" />
 	<NavItem
-		href="{base}/info"
-		name="Info" />
+		href="{base}/challenge"
+		disabled
+		name="Challenge" />
+	<NavItem
+		href="{base}/participants"
+		disabled
+		name="Participants" />
 	<NavItem
 		href="{base}/contact"
 		name="Contact" />

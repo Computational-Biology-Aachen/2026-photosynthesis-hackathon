@@ -8,9 +8,11 @@
 
 	let {
 		title,
+		link,
 		slug
 	}: {
 		title: string;
+		link: string;
 		slug: string;
 	} = $props();
 
@@ -20,7 +22,7 @@
 
 <Link
 	color="white"
-	href="participants/{slug}">
+	href="{link}/{slug}">
 	<div
 		class="card"
 		style:background-image="url({img})">

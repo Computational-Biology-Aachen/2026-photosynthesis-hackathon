@@ -1,8 +1,16 @@
 <script lang="ts">
-	let { href, name }: { href: string; name: string } = $props();
+	let {
+		href,
+		name,
+		disabled = false
+	}: { href: string; name: string; disabled?: boolean } = $props();
 </script>
 
-<li><a {href}>{name}</a></li>
+<li>
+	<a
+		class={disabled ? 'disabled' : ''}
+		{href}>{name}</a>
+</li>
 
 <style>
 	li {
@@ -21,5 +29,12 @@
 	a:hover {
 		text-decoration: underline;
 		/* filter: brightness(150%); */
+	}
+	a.disabled {
+		color: var(--black);
+		cursor: not-allowed;
+	}
+	a.disabled:hover {
+		text-decoration: none;
 	}
 </style>
