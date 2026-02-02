@@ -1,5 +1,5 @@
 <script lang="ts">
-	import PersonCard from '$lib/cards/PersonCard.svelte';
+	import PersonCard from '$lib/cards/ParticipantCard.svelte';
 	import Header from '$lib/sections/Header.svelte';
 	import Section from '$lib/sections/Section.svelte';
 	import H1 from '$lib/text/H1.svelte';
