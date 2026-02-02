@@ -12,7 +12,7 @@
 	import { faEnvelope, faHome } from '@fortawesome/free-solid-svg-icons';
 	import Fa from 'svelte-fa';
 
-	const images = import.meta.glob(['$lib/assets/people/*'], {
+	const images = import.meta.glob(['$lib/assets/participants/*'], {
 		eager: true,
 		query: '?url',
 		import: 'default'
@@ -21,7 +21,7 @@
 	let { data } = $props();
 	let person: Participant = data.meta;
 
-	let filename = `/people/${data.slug.split('/').at(-1)}.jpg`;
+	let filename = `/participants/${data.slug.split('/').at(-1)}.jpg`;
 	let img: string =
 		(images[`/src/lib/assets${filename}`] as string)
 		|| '/src/lib/assets/people/placeholder.jpg';
@@ -33,10 +33,8 @@
 	}
 	const name: string = person.name;
 	const mail: string | undefined = person.mail;
-	const github: string | undefined = person.github;
-	const gitlab: string | undefined = person.gitlab;
-	const website: string | undefined = person.website;
-	const orcid: string | undefined = person.orcid;
+	const institution: string | undefined = person.institution;
+	const nationality: string | undefined = person.nationality;
 </script>
 
 <svelte:head>
@@ -50,35 +48,16 @@
 	<div class="grid">
 		<div class="info">
 			<H1 color="white">{name}</H1>
-			<Text color="white">Department of Biology</Text>
-			<Text color="white"
-				>Faculty of Mathematics, Computer Science and Natural Sciences</Text>
-			<!-- <Text color="white">anna.matuszynska@rwth-aachen.de</Text> -->
-			<Text color="white">Worringerweg 1 52074 Aachen</Text>
+			{#if nationality != null}
+				<Text color="white">{nationality}</Text>
+			{/if}
+			{#if nationality != null}
+				<Text color="white">{institution}</Text>
+			{/if}
 			{#if mail != null}
 				<Link
 					color="white"
 					href="mailto:{mail}"><Fa icon={faEnvelope} /></Link>
-			{/if}
-			{#if github != null}
-				<Link
-					color="white"
-					href={github}><Fa icon={faGithub} /></Link>
-			{/if}
-			{#if gitlab != null}
-				<Link
-					color="white"
-					href={gitlab}><Fa icon={faGitlab} /></Link>
-			{/if}
-			{#if orcid != null}
-				<Link
-					color="white"
-					href={orcid}><Fa icon={faOrcid} /></Link>
-			{/if}
-			{#if website != null}
-				<Link
-					color="white"
-					href={website}><Fa icon={faHome} /></Link>
 			{/if}
 		</div>
 		{#if imageError}
@@ -112,6 +91,7 @@
 	}
 
 	img {
+		object-fit: cover;
 		margin: 0 auto;
 		width: 300px;
 		height: 300px;
