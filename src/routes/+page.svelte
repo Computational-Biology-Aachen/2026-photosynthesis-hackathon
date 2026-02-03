@@ -19,6 +19,8 @@
 
 	import jiiLogo from '$lib/assets/jan-ingenhousz-institute-logo.png';
 	import mcLogo from '$lib/assets/mastercard-cambridge.png';
+
+	import kenya1 from '$lib/assets/kenya1.jpg';
 </script>
 
 <svelte:head>
@@ -29,7 +31,7 @@
 <Section color="white">
 	<R2>
 		<img
-			src="hand.png"
+			src={kenya1}
 			alt="placeholder" />
 		<div>
 			<H1 color="secondary">Photosynthesis hackathon</H1>
@@ -47,22 +49,6 @@
 			<Text
 				><Bold>Where?</Bold> International Institute of Tropical Agriculture (IITA),
 				Accra, Ghana (moved from Ibadan, Nigeria)</Text>
-			<!-- <Text><Bold>Registration opens?</Bold> 06.10.2025</Text> -->
-
-			<!-- <Text
-				><Bold>Registration open until?</Bold>
-				<Strikethrough>09.11.2025</Strikethrough> 16.11.2025</Text>
-			<Text
-				>📅 Apply now and be part of a new community driving innovation at the
-				intersection of genetics, physiology, and data.</Text> -->
-
-			<!-- <div style="background-color: var(--primary); padding: 1rem;">
-				<Text
-					color="white"
-					padding="none"
-					><Bold>REGISTRATION EXTENDED</Bold>
-				</Text>
-			</div> -->
 			<BtnGrp
 				disabled
 				href="/">Registration closed - thanks for all your submissions</BtnGrp>
