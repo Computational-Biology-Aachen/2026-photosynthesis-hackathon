@@ -8,6 +8,7 @@ github: "https://github.com/marvinvanaalst"
 gitlab: "https://gitlab.com/marvin.vanaalst/"
 website: "https://marvinvanaalst.github.io/"
 orcid: "https://orcid.org/0000-0002-7434-0249"
+order: 1
 ---
 
 ## About Marvin

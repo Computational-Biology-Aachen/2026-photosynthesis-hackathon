@@ -18,6 +18,15 @@ export async function load() {
 			}
 		}
 
+		members = members.sort((first, second) => {
+			const order = second.order - first.order;
+			if (order !== 0) return order;
+
+			const lastName1 = first.slug.split('-').pop() || '';
+			const lastName2 = second.slug.split('-').pop() || '';
+			return lastName1.localeCompare(lastName2);
+		});
+
 		return { members };
 	} catch (e) {
 		console.error('Failed to load members:', e);

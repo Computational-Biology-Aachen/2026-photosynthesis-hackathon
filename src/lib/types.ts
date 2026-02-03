@@ -10,6 +10,7 @@ export type Participant = {
 export type Trainer = {
 	name: string;
 	slug: string;
+	order: number;
 	affiliation?: string;
 	city?: string;
 	country: string;

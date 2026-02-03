@@ -3,6 +3,7 @@ name: "Dr. Tom Theeuwen"
 affiliation: "Jan IngenHousz Institute"
 city: "Wageningen"
 country: "Netherlands"
+order: 1
 ---
 
 ## About Tom

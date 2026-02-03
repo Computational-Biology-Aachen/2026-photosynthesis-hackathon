@@ -3,6 +3,7 @@ name: "Prof. Dr. David M. Kramer"
 affiliation: "Jan IngenHousz Institute"
 city: "Wageningen"
 country: "Netherlands"
+order: 2
 ---
 
 ## About David
