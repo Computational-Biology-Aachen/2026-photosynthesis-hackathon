@@ -13,7 +13,13 @@
 
 <Header>
 	<H1 color="white">Trainers</H1>
-	<Text color="white">Get to know all the trainers in this hackathon.</Text>
+	<Text color="white">
+		Get to know our distinguished team of trainers at the forefront of
+		photosynthesis research, quantitative genetics, and data-driven plant
+		science. Combining deep domain expertise with hands-on experience, they
+		bring rigorous scientific insight and practical guidance to every stage of
+		the hackathon. Their leadership ensures participants gain both cutting-edge
+		knowledge and the skills to translate data into biological understanding.</Text>
 </Header>
 
 <Section>
