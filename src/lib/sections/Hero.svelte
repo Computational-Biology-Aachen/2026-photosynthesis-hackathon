@@ -19,11 +19,11 @@
 				rgba(245, 246, 252, 0.52),
 				color-mix(in srgb, var(--primary) 73%, transparent)
 			),
-			url('/hero.jpg');
+			url('/hero2.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
-		max-width: 1920px;
+		height: 500px;
 		margin: 0 auto;
 	}
 	.inner {
