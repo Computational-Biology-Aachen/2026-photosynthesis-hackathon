@@ -9,7 +9,7 @@
 <li>
 	<a
 		class={disabled ? 'disabled' : ''}
-		{href}>{name}</a>
+		href={disabled ? '/' : href}>{name}</a>
 </li>
 
 <style>
