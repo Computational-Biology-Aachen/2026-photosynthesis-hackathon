@@ -19,8 +19,6 @@
 
 	import jiiLogo from '$lib/assets/jan-ingenhousz-institute-logo.png';
 	import mcLogo from '$lib/assets/mastercard-cambridge.png';
-
-	import kenya1 from '$lib/assets/kenya1.jpg';
 </script>
 
 <svelte:head>
@@ -31,7 +29,7 @@
 <Section color="white">
 	<R2>
 		<img
-			src={kenya1}
+			src="{base}/kenya1.jpg"
 			alt="placeholder" />
 		<div>
 			<H1 color="secondary">Photosynthesis hackathon</H1>
