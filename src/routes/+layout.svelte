@@ -43,7 +43,6 @@
 		name="Challenge" />
 	<NavItem
 		href="{base}/participants"
-		disabled
 		name="Participants" />
 	<NavItem
 		href="{base}/contact"
