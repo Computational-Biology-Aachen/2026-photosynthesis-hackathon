@@ -12,12 +12,12 @@
 		grid-template-columns: 1fr;
 		align-items: center;
 		justify-content: center;
-		grid-gap: 10px;
+		gap: 10px 3rem;
 	}
 
 	@media (min-width: 64rem) {
 		div {
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: 1fr 1fr 1fr;
 		}
 	}
 </style>

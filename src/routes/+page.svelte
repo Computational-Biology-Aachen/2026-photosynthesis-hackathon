@@ -17,6 +17,7 @@
 	import Italic from '$lib/text/Italic.svelte';
 	import Text from '$lib/text/Text.svelte';
 
+	import iitaLogo from '$lib/assets/iita_logo.png';
 	import jiiLogo from '$lib/assets/jan-ingenhousz-institute-logo.png';
 	import mcLogo from '$lib/assets/mastercard-cambridge.png';
 </script>
@@ -139,7 +140,9 @@
 			>Mastercard Foundation and University of Cambridge Climate Resilience and
 			Sustainability Research Fund</Italic> and the <Italic
 			>JanIngenhousz Intitute under JII Open Challenge Fund</Italic> for the generous
-		funding of this hackathon.</Text>
+		funding of this hackathon. We would also like to thank the International Institute
+		of Tropical Agriculture for hosting the event.
+	</Text>
 	<GridSponsor>
 		<Sponsor
 			href="https://mastercardfdn.org/en/"
@@ -147,6 +150,9 @@
 		<Sponsor
 			href="https://www.jan-ingenhousz-institute.org/"
 			img={jiiLogo} />
+		<Sponsor
+			href="https://www.iita.org/"
+			img={iitaLogo} />
 	</GridSponsor>
 </Section>
 <Section color="primary">
