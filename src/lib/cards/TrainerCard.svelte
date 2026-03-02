@@ -1,7 +1,6 @@
 <script lang="ts">
-	import Link from '$lib/Link.svelte';
 	const images: Record<string, string> = import.meta.glob(
-		['$lib/assets/participants/*'],
+		['$lib/assets/people/*'],
 		{
 			eager: true,
 			query: '?url',
@@ -20,42 +19,46 @@
 	} = $props();
 
 	// svelte-ignore state_referenced_locally
-	let filename = `/src/lib/assets/participants/${slug}.jpg`;
+	let filename = `/src/lib/assets/people/${slug}.jpg`;
 	let img = images[filename] ?? '/src/lib/assets/people/placeholder.jpg';
 </script>
 
-<Link
-	color="white"
-	href="{link}/{slug}">
-	<div class="card">
-		<img
-			src={img}
-			alt={title} />
-		<div class="bar">
-			<h4 class="white">{title}</h4>
-		</div>
+<div class="card">
+	<div class="inner">
+		<a
+			color="white"
+			href="{link}/{slug}">
+			<img
+				src={img}
+				alt={title} />
+			<div class="bar">
+				<h4 class="white">{title}</h4>
+			</div>
+		</a>
 	</div>
-</Link>
+</div>
 
 <style>
 	.card {
-		position: relative;
 		display: inline-flex;
 		flex-direction: column;
-		justify-content: end;
-		width: 100%;
-		height: 300px;
+		align-items: center;
+		justify-content: center;
+		width: 300px;
 		padding: 0;
 		margin: 0 auto;
 		transition: transform 0.3s ease;
 		overflow: hidden;
 	}
-	.card:hover {
-		transform: scale(1.02);
+	.inner {
+		position: relative;
+		margin: 0 auto;
+		padding: 0;
+		height: 300px;
 	}
-	.card img {
+
+	img {
 		display: block;
-		width: 100%;
 		height: 100%;
 		object-fit: cover;
 		object-position: center;
@@ -65,13 +68,24 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
-		display: flex;
-		flex-direction: column;
 		padding: 0.5rem;
-		margin: 0 auto;
 		color: var(--white);
 		background-color: rgba(0, 0, 0, 0.7);
 	}
+	.card:hover {
+		transform: scale(1.02);
+	}
+	a {
+		font-family: sans-serif;
+		text-decoration: none;
+		transition: var(--transition);
+		margin: 0;
+		padding: 0;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+
 	h4 {
 		padding: 0;
 		margin: 0;

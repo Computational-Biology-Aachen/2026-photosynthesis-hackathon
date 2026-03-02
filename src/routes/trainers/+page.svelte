@@ -1,5 +1,5 @@
 <script lang="ts">
-	import PersonCard from '$lib/cards/PersonCard.svelte';
+	import TrainerCard from '$lib/cards/TrainerCard.svelte';
 	import Header from '$lib/sections/Header.svelte';
 	import Section from '$lib/sections/Section.svelte';
 	import H1 from '$lib/text/H1.svelte';
@@ -7,6 +7,7 @@
 	import type { Trainer } from '$lib/types';
 
 	let { data } = $props();
+	// svelte-ignore state_referenced_locally
 	let members: Trainer[] = data.members;
 	const link = 'trainers';
 </script>
@@ -25,11 +26,11 @@
 <Section>
 	<div class="grid">
 		{#each members as { slug, name }}
-			<PersonCard
+			<TrainerCard
 				title={name}
 				{link}
 				{slug}>
-			</PersonCard>
+			</TrainerCard>
 		{/each}
 	</div>
 </Section>
@@ -37,9 +38,21 @@
 <style>
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		grid-template-columns: 1fr;
 		align-items: center;
 		justify-content: center;
-		grid-gap: 10px;
+		grid-gap: 1rem;
+
+		@media (min-width: 650px) {
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 1.25rem;
+		}
+		@media (min-width: 1100px) {
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: 1.5rem;
+		}
+		@media (min-width: 1200px) {
+			grid-gap: 1.75rem;
+		}
 	}
 </style>

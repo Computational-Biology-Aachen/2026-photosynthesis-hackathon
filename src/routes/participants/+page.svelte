@@ -7,6 +7,7 @@
 	import type { Participant } from '$lib/types';
 
 	let { data } = $props();
+	// svelte-ignore state_referenced_locally
 	let members: Participant[] = data.members;
 	const link = 'participants';
 </script>
