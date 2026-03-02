@@ -31,9 +31,26 @@
 <style>
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		grid-template-columns: 1fr;
 		align-items: center;
 		justify-content: center;
-		grid-gap: 10px;
+		grid-gap: 1rem;
+
+		@media (min-width: 600px) {
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 1.25rem;
+		}
+		@media (min-width: 800px) {
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: 1.5rem;
+		}
+		@media (min-width: 1200px) {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-gap: 1.75rem;
+		}
+		@media (min-width: 1600px) {
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			grid-gap: 2rem;
+		}
 	}
 </style>
