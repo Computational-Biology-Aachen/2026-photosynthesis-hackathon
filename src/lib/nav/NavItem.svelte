@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	let {
 		href,
 		name,
@@ -9,7 +10,7 @@
 <li>
 	<a
 		class={disabled ? 'disabled' : ''}
-		href={disabled ? '/' : href}>{name}</a>
+		href={disabled ? `${base}/` : href}>{name}</a>
 </li>
 
 <style>
