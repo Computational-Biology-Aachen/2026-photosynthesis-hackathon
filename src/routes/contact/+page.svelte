@@ -26,20 +26,16 @@
 				<H6 color="secondary">EMAIL</H6>
 				<Text>anna.matuszynska@cpbl.rwth-aachen.de</Text>
 
+				<H6 color="secondary">PHONE</H6>
+				<Text>Tel.: +49 (241) 80 25817</Text>
+
 				<H6 color="secondary">LOCATION</H6>
-				<Text>RWTH, Worringerweg 1, 52074 Aachen</Text>
-
-				<H6 color="secondary">IMPRINT</H6>
-				<Text>
-					Anbieter i.S.d. TDG/MDStV: Prof. Dr. Anna B. Matuszyńska <br />
-					Worringerweg 1 52074 Aachen <br />
-					Work Phone: +49 241 80 25817 <br />
-
-					Verantwortlich i.S.d. § 6 Abs. 2 MDStV: <br />
-					Prof. Dr. Anna B. Matuszyńska <br />
-					Design und Umsetzung Dr. Marvin van Aalst<br />
-					(c) 2025 Prof. Dr. Anna B. Matuszyńska, Alle Rechte vorbehalten.
-				</Text>
+				<Text>Computational Life Science</Text>
+				<Text>Department of Biology</Text>
+				<Text>RWTH Aachen University</Text>
+				<Text>Sammelbau Biologie 1, 42C041</Text>
+				<Text>Worringerweg 1 (Campus Melaten)</Text>
+				<Text>52074 Aachen, Germany</Text>
 			</div>
 		</R2>
 	</Section>

@@ -8,7 +8,6 @@
 	import Li from '$lib/lists/Li.svelte';
 	import Ul from '$lib/lists/Ul.svelte';
 	import R2 from '$lib/R2.svelte';
-	import Footer from '$lib/sections/Footer.svelte';
 	import Hero from '$lib/sections/Hero.svelte';
 	import Section from '$lib/sections/Section.svelte';
 	import Bold from '$lib/text/Bold.svelte';
@@ -201,8 +200,6 @@
 			for continued collaboration</Li>
 	</Ul>
 </Section>
-
-<Footer />
 
 <style>
 	img {

@@ -3,6 +3,7 @@
 	import * as config from '$lib/config';
 	import Nav from '$lib/nav/Nav.svelte';
 	import NavItem from '$lib/nav/NavItem.svelte';
+	import Footer from '$lib/sections/Footer.svelte';
 	import '../app.css';
 
 	let { children } = $props();
@@ -52,6 +53,8 @@
 <main>
 	{@render children()}
 </main>
+
+<Footer />
 
 <style>
 	main {
