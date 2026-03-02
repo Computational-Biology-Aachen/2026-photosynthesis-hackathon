@@ -40,7 +40,10 @@ const config = {
 			precompress: false,
 			strict: true,
 			fallback: '404.html'
-		})
+		}),
+		paths: {
+			base: process.argv.includes('dev') ? '' : '/2026-photosynthesis-hackathon'
+		}
 	}
 };
 
