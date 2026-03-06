@@ -125,7 +125,7 @@
 		<Li color="white"
 			><Link
 				color="white"
-				href="https://www.iita.org/">
+				href="https://www.iita.org/iita-staff/dr-sansa-olakunle-opeyemi/">
 				Dr. Sansa Olakunle, International Institute of Tropical Agriculture,
 				Nigeria</Link
 			></Li>
