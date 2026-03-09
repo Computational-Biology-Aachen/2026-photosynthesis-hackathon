@@ -1,5 +1,5 @@
 <script>
-	import { base, resolve } from '$app/paths';
+	import { base } from '$app/paths';
 	import BtnGrp from '$lib/buttons/BtnGrp.svelte';
 	import ButtonGroup from '$lib/buttons/ButtonGroup.svelte';
 	import Sponsor from '$lib/cards/Sponsor.svelte';
@@ -85,9 +85,9 @@
 	<Text>Application from both Europe and Africa is highly encouraged.</Text>
 
 	<ButtonGroup>
-		<BtnGrp href={resolve('/trainers')}>Trainers</BtnGrp>
-		<BtnGrp href={resolve('/challenge')}>Challenge</BtnGrp>
-		<BtnGrp href="/participants">Participants</BtnGrp>
+		<BtnGrp href="{base}//trainers">Trainers</BtnGrp>
+		<BtnGrp href="{base}//challenge">Challenge</BtnGrp>
+		<BtnGrp href="{base}//participants">Participants</BtnGrp>
 	</ButtonGroup>
 </Section>
 <Section color="secondary">
