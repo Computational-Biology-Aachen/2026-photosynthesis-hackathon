@@ -85,9 +85,9 @@
 	<Text>Application from both Europe and Africa is highly encouraged.</Text>
 
 	<ButtonGroup>
-		<BtnGrp href="{base}//trainers">Trainers</BtnGrp>
-		<BtnGrp href="{base}//challenge">Challenge</BtnGrp>
-		<BtnGrp href="{base}//participants">Participants</BtnGrp>
+		<BtnGrp href="{base}/trainers">Trainers</BtnGrp>
+		<BtnGrp href="{base}/challenge">Challenge</BtnGrp>
+		<BtnGrp href="{base}/participants">Participants</BtnGrp>
 	</ButtonGroup>
 </Section>
 <Section color="secondary">
