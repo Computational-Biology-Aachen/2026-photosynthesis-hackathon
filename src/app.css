@@ -80,23 +80,29 @@ body {
 
 table {
     font-size: 1rem;
-    font-family: var(var(--font-family));
+    font-family: var(--font-family);
+
+
+    th, td {
+        padding: 1rem 0.5rem;
+    }
 
     thead {
         font-size: 1.25rem;
     }
 
-    td {
-        padding: 1rem 0.5rem;
+    thead tr {
+        background-color: rgb(0, 97, 101);
+        color: white;
     }
 
-    tbody tr:nth-child(odd) {
-        background-color: hsl(216, 19%, 90%);
+    tbody tr:nth-child(even) {
+        background-color: rgba(0, 97, 101, 0.2);
     }
 
     tbody tr:hover {
         transition-duration: 150ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        background-color: rgba(0, 97, 101, 0.2);
+        background-color: hsl(216, 19%, 90%);
     }
 }
