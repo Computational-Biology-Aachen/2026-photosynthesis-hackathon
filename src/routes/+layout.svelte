@@ -40,7 +40,6 @@
 		name="Trainers" />
 	<NavItem
 		href="{base}/challenge"
-		disabled
 		name="Challenge" />
 	<NavItem
 		href="{base}/participants"

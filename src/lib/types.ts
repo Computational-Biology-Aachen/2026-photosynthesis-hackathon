@@ -20,3 +20,4 @@ export type Trainer = {
 	website?: string;
 	orcid?: string;
 };
+export type MdPage = {};
