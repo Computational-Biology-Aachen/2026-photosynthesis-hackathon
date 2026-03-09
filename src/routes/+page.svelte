@@ -86,12 +86,8 @@
 
 	<ButtonGroup>
 		<BtnGrp href={resolve('/trainers')}>Trainers</BtnGrp>
-		<BtnGrp
-			disabled
-			href={resolve('/challenge')}>Challenge</BtnGrp>
-		<BtnGrp
-			disabled
-			href="/participants">Participants</BtnGrp>
+		<BtnGrp href={resolve('/challenge')}>Challenge</BtnGrp>
+		<BtnGrp href="/participants">Participants</BtnGrp>
 	</ButtonGroup>
 </Section>
 <Section color="secondary">
