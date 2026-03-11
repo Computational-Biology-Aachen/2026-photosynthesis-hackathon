@@ -1,3 +1,14 @@
+## Day 5
+
+| Time          | Session                          | Trainer / Lead                                       |
+| :------------ | :------------------------------- | :--------------------------------------------------- |
+| **08:00**   | Opening and Break Out            | **Prof. Anna Matuszyńska**<br />RWTH Aachen, Germany |
+| 08:30–11:00   | Team Presentations              | All together                                                |
+| 11:00–13:00   | Discussion                | All together                                         |
+| *13:00–14:00* | **Lunch**                        |
+| 14:00   | Closing Ceremony             | **IITA representative**                                               |
+
+
 ## Day 4
 
 | Time          | Session                          | Trainer / Lead                                       |
