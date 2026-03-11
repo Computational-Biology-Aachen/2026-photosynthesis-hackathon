@@ -1,3 +1,15 @@
+## Day 4
+
+| Time          | Session                          | Trainer / Lead                                       |
+| :------------ | :------------------------------- | :--------------------------------------------------- |
+| 08:00   | Opening and Break Out            | **Prof. Anna Matuszyńska**<br />RWTH Aachen, Germany |
+| 08:00–12:00   | Hacking in Teams                 | Divided                                              |
+| 12:00–12:30   | Midday Check Up                  | All together                                         |
+| *12:30–13:00* | **Lunch**                        |
+| 13:00–18:00   | Social activity              | All together                                                  |
+| 18:00–20:00   | End of the Day Check Up          | All together                                         |
+| *Evening*     | **Informal dinner / networking** | All                                                  |
+
 ## Day 3
 
 | Time          | Session                          | Trainer / Lead                                       |
@@ -5,7 +17,6 @@
 | 09:00–09:30   | Opening and Break Out            | **Prof. Anna Matuszyńska**<br />RWTH Aachen, Germany |
 | 09:30–12:00   | Hacking in Teams                 | Divided                                              |
 | 12:00–12:30   | Midday Check Up                  | All together                                         |
-|               |
 | *12:30–13:30* | **Lunch**                        |
 | 13:30–17:30   | Hacking in Teams                 | Divided                                              |
 | 17:30–18:00   | End of the Day Check Up          | All together                                         |
@@ -20,7 +31,6 @@
 | 09:00–09:30   | Opening and Break Out            | **Prof. Anna Matuszyńska**<br />RWTH Aachen, Germany |
 | 09:30–12:00   | Hacking in Teams                 | Divided                                              |
 | 12:00–12:30   | Midday Check Up                  | All together                                         |
-|               |
 | *12:30–13:30* | **Lunch**                        |
 | 13:30–17:30   | Hacking in Teams                 | Divided                                              |
 | 17:30–18:00   | End of the Day Check Up          | All together                                         |
