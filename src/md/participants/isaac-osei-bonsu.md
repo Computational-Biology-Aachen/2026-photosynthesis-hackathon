@@ -1,5 +1,5 @@
 ---
-name: "Ihuoma Ogechi"
+name: "Isaac Osei-Bonsu"
 mail: "ob.isaac@gmail.com"
 institution: "Kwame Nkrumah University of Science and Technology, Ghana / CSIR-Crops Research Institute"
 nationality: "Ghanaian"
