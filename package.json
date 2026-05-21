@@ -25,12 +25,12 @@
 		"globals": ">=17.5.0",
 		"mdsvex": ">=0.12.7",
 		"prettier": ">=3.8.3",
-		"prettier-plugin-svelte": ">=3.5.2",
+		"prettier-plugin-svelte": ">=4.0.0",
 		"prettier-plugin-tailwindcss": ">=0.8.0",
-		"svelte": ">=5.55.5",
+		"svelte": ">=5.55.9",
 		"svelte-check": ">=4.4.8",
 		"typescript": ">=6.0.2",
-		"typescript-eslint": ">=8.59.3",
+		"typescript-eslint": ">=8.59.4",
 		"vite": ">=8.0.12"
 	},
 	"dependencies": {
@@ -38,7 +38,7 @@
 		"@fortawesome/free-solid-svg-icons": ">=7.2.0",
 		"@picocss/pico": ">=2.1.1",
 		"@sveltejs/adapter-static": ">=3.0.10",
-		"shiki": ">=4.0.2",
+		"shiki": ">=4.1.0",
 		"svelte-fa": ">=4.0.4",
 		"svelte-media-queries": ">=1.6.2"
 	},
