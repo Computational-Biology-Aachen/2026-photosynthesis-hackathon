@@ -31,7 +31,6 @@
 	<meta
 		name="twitter:card"
 		content="summary" />
-	<title>2026 Photosynthesis Hackathon</title>
 </svelte:head>
 
 <Navbar>
