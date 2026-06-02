@@ -1,17 +1,19 @@
 <script lang="ts">
-	import Header from '$lib/sections/Header.svelte';
-	import Section from '$lib/sections/Section.svelte';
-	import H1 from '$lib/text/H1.svelte';
+	import {
+		H1,
+		Section,
+		SectionHeader
+	} from '@computational-biology-aachen/design';
 
 	let { data } = $props();
 	// svelte-ignore state_referenced_locally
 	let page = data;
 </script>
 
-<Header>
-	<H1 color="white">Challenge</H1>
-</Header>
+<SectionHeader width="narrow">
+	<H1 color="light">Challenge</H1>
+</SectionHeader>
 
-<Section>
+<Section width="narrow">
 	<page.default />
 </Section>

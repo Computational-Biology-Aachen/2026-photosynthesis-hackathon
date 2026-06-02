@@ -1,9 +1,12 @@
 <script lang="ts">
-	import Link from '$lib/Link.svelte';
-	import Section from '$lib/sections/Section.svelte';
-	import H1 from '$lib/text/H1.svelte';
-	import Text from '$lib/text/Text.svelte';
 	import type { Trainer } from '$lib/types';
+	import {
+		H1,
+		Link,
+		Section,
+		SectionHeader,
+		Text
+	} from '@computational-biology-aachen/design';
 	import {
 		faGithub,
 		faGitlab,
@@ -19,8 +22,9 @@
 	});
 
 	let { data } = $props();
+	// svelte-ignore state_referenced_locally
 	let person: Trainer = data.meta;
-
+	// svelte-ignore state_referenced_locally
 	let filename = `/people/${data.slug.split('/').at(-1)}.jpg`;
 	let img: string =
 		(images[`/src/lib/assets${filename}`] as string)
@@ -49,10 +53,10 @@
 		content="article" />
 </svelte:head>
 
-<Section color="primary">
+<SectionHeader width="narrow">
 	<div class="grid">
 		<div class="info">
-			<H1 color="white">{name}</H1>
+			<H1 color="light">{name}</H1>
 			{#if affiliation != null}
 				<Text color="white">{affiliation}</Text>
 			{/if}
@@ -64,27 +68,27 @@
 			{/if}
 			{#if mail != null}
 				<Link
-					color="white"
+					color="light"
 					href="mailto:{mail}"><Fa icon={faEnvelope} /></Link>
 			{/if}
 			{#if github != null}
 				<Link
-					color="white"
+					color="light"
 					href={github}><Fa icon={faGithub} /></Link>
 			{/if}
 			{#if gitlab != null}
 				<Link
-					color="white"
+					color="light"
 					href={gitlab}><Fa icon={faGitlab} /></Link>
 			{/if}
 			{#if orcid != null}
 				<Link
-					color="white"
+					color="light"
 					href={orcid}><Fa icon={faOrcid} /></Link>
 			{/if}
 			{#if website != null}
 				<Link
-					color="white"
+					color="light"
 					href={website}><Fa icon={faHome} /></Link>
 			{/if}
 		</div>
@@ -99,9 +103,9 @@
 				onerror={handleError} />
 		{/if}
 	</div>
-</Section>
+</SectionHeader>
 
-<Section><data.content /></Section>
+<Section width="narrow"><data.content /></Section>
 
 <style>
 	.grid {
@@ -123,19 +127,19 @@
 		width: 300px;
 		height: 300px;
 		border-radius: 50%;
-		border: 4px solid var(--white);
+		border: 4px solid var(--color-bg);
 	}
 
 	.placeholder {
 		width: 300px;
 		height: 300px;
 		border-radius: 50%;
-		color: var(--white);
-		background-color: var(--black);
+		color: var(--color-bg);
+		background-color: var(--color-text);
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		margin-bottom: 1rem;
-		border: 4px solid var(--white);
+		border: 4px solid var(--color-bg);
 	}
 </style>

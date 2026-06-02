@@ -1,20 +1,23 @@
 <script>
 	import { base } from '$app/paths';
-	import BtnGrp from '$lib/buttons/BtnGrp.svelte';
-	import ButtonGroup from '$lib/buttons/ButtonGroup.svelte';
-	import Sponsor from '$lib/cards/Sponsor.svelte';
-	import GridSponsor from '$lib/GridSponsor.svelte';
-	import Link from '$lib/Link.svelte';
-	import Li from '$lib/lists/Li.svelte';
-	import Ul from '$lib/lists/Ul.svelte';
-	import R2 from '$lib/R2.svelte';
-	import Hero from '$lib/sections/Hero.svelte';
-	import Section from '$lib/sections/Section.svelte';
-	import Bold from '$lib/text/Bold.svelte';
-	import H1 from '$lib/text/H1.svelte';
-	import H2 from '$lib/text/H2.svelte';
-	import Italic from '$lib/text/Italic.svelte';
-	import Text from '$lib/text/Text.svelte';
+	import {
+		Bold,
+		Button,
+		CardSponsor,
+		Div,
+		Grid,
+		GridSponsor,
+		H1,
+		H2,
+		Hero,
+		Imprint,
+		Italic,
+		Li,
+		Link,
+		Section,
+		Text,
+		Ul
+	} from '@computational-biology-aachen/design';
 
 	import iitaLogo from '$lib/assets/iita_logo.png';
 	import jiiLogo from '$lib/assets/jan-ingenhousz-institute-logo.png';
@@ -22,22 +25,32 @@
 </script>
 
 <svelte:head>
-	<title>Photosynthesis hackathon</title>
+	<title>2026 Photosynthesis hackathon</title>
 </svelte:head>
 
-<Hero />
-<Section color="white">
-	<R2>
+<Hero src="{base}/hero2.jpg">
+	<h1 class="hero-title">JII OPEN CHALLENGE</h1>
+	<div class="hero-highlight">
+		<p>From field photosynthesis to genetic architecture</p>
+	</div>
+</Hero>
+
+<Section
+	variant="light"
+	width="narrow">
+	<Grid
+		columns={2}
+		gap="var(--space-8)">
 		<img
 			src="{base}/kenya1.jpg"
 			alt="placeholder" />
-		<div>
-			<H1 color="secondary">Photosynthesis hackathon</H1>
+		<Div>
+			<H1>Photosynthesis hackathon</H1>
 			<Text>
 				How do genetic differences shape the way plants capture light, process
 				carbon, and survive drought? Join us for <Bold
-					>“Hacking for Photosynthesis: From Field Photosynthesis to Genetic
-					Architecture”</Bold
+					>"Hacking for Photosynthesis: From Field Photosynthesis to Genetic
+					Architecture"</Bold
 				>: a unique, fast-paced hackathon bringing together data scientists,
 				plant researchers, software engineers, and innovators to uncover the
 				links between <Bold
@@ -47,11 +60,10 @@
 			<Text
 				><Bold>Where?</Bold> International Institute of Tropical Agriculture (IITA),
 				Accra, Ghana (moved from Ibadan, Nigeria)</Text>
-			<BtnGrp
-				disabled
-				href="/">Registration closed - thanks for all your submissions</BtnGrp>
-		</div>
-	</R2>
+			<Button disabled
+				>Registration closed - thanks for all your submissions</Button>
+		</Div>
+	</Grid>
 	<Text
 		>The hackathon is hosted at the International Institute of Tropical
 		Agriculture (IITA) in Accra, Ghana. <Bold
@@ -59,17 +71,15 @@
 		>.</Text>
 	<Text>Over five days, participants will</Text>
 	<Ul>
-		<Li>
-			Dive into curated, real-world datasets provided by JanIngenhousz Institute
-		</Li>
-		<Li>
-			Explore photosynthesis traits, genetic variation, and environmental
-			interactions
-		</Li>
-		<Li>
-			Work in interdisciplinary teams to tackle a high-impact research
-			challenge. Present their findings at a public outreach event
-		</Li>
+		<Li
+			>Dive into curated, real-world datasets provided by JanIngenhousz
+			Institute</Li>
+		<Li
+			>Explore photosynthesis traits, genetic variation, and environmental
+			interactions</Li>
+		<Li
+			>Work in interdisciplinary teams to tackle a high-impact research
+			challenge. Present their findings at a public outreach event</Li>
 		<Li>Build lasting connections and shape future collaborations</Li>
 	</Ul>
 	<Text>
@@ -84,51 +94,62 @@
 	</Text>
 	<Text>Application from both Europe and Africa is highly encouraged.</Text>
 
-	<ButtonGroup>
-		<BtnGrp href="{base}/trainers">Trainers</BtnGrp>
-		<BtnGrp href="{base}/challenge">Challenge</BtnGrp>
-		<BtnGrp href="{base}/participants">Participants</BtnGrp>
-	</ButtonGroup>
+	<Grid columns={3}>
+		<Button
+			href="{base}/trainers"
+			fullWidth>Trainers</Button>
+		<Button
+			href="{base}/challenge"
+			fullWidth>Challenge</Button>
+		<Button
+			href="{base}/participants"
+			fullWidth>Participants</Button>
+	</Grid>
 </Section>
-<Section color="secondary">
-	<H2 color="white">Organizing Committee</H2>
-	<Ul>
-		<Li color="white"
+
+<Section
+	variant="dark"
+	width="narrow">
+	<H2 color="light">Organizing Committee</H2>
+	<Ul color="light">
+		<Li color="light"
 			><Link
-				color="white"
+				color="light"
 				href="https://computational-biology-aachen.github.io/team/anna-matuszy%C5%84ska"
 				>Prof. Dr. Anna Matuszyńska, RWTH Aachen, Germany</Link
 			></Li>
-		<Li color="white"
+		<Li color="light"
 			><Link
-				color="white"
+				color="light"
 				href="https://www.jan-ingenhousz-institute.org/team/prof.-david-m.-kramer"
 				>Prof. Dr. David M. Kramer, Jan Ingenhousz Institute Wageningen,
 				Netherlands</Link
 			></Li>
-		<Li color="white"
+		<Li color="light"
 			><Link
-				color="white"
+				color="light"
 				href="https://computational-biology-aachen.github.io/team/marvin-van-aalst"
 				>Dr. Marvin van Aalst, RWTH Aachen, Germany</Link
 			></Li>
-		<Li color="white"
+		<Li color="light"
 			><Link
-				color="white"
+				color="light"
 				href="https://www.plantsci.cam.ac.uk/directory/johannes-kromdijk"
 				>Dr. Johannes Kromdijk, University of Cambridge, United Kingdom</Link
 			></Li>
-		<Li color="white"
+		<Li color="light"
 			><Link
-				color="white"
-				href="https://www.iita.org/iita-staff/dr-sansa-olakunle-opeyemi/">
-				Dr. Sansa Olakunle, International Institute of Tropical Agriculture,
+				color="light"
+				href="https://www.iita.org/iita-staff/dr-sansa-olakunle-opeyemi/"
+				>Dr. Sansa Olakunle, International Institute of Tropical Agriculture,
 				Nigeria</Link
 			></Li>
 	</Ul>
 </Section>
 
-<Section color="white">
+<Section
+	variant="light"
+	width="narrow">
 	<H2 color="secondary">Partners</H2>
 	<Text
 		>We would like to thank our partners of the <Italic
@@ -139,24 +160,29 @@
 		of Tropical Agriculture for hosting the event.
 	</Text>
 	<GridSponsor>
-		<Sponsor
+		<CardSponsor
 			href="https://mastercardfdn.org/en/"
-			img={mcLogo} />
-		<Sponsor
+			img={mcLogo}
+			name="Mastercard Foundation" />
+		<CardSponsor
 			href="https://www.jan-ingenhousz-institute.org/"
-			img={jiiLogo} />
-		<Sponsor
+			img={jiiLogo}
+			name="Jan Ingenhousz Institute" />
+		<CardSponsor
 			href="https://www.iita.org/"
-			img={iitaLogo} />
+			img={iitaLogo}
+			name="IITA" />
 	</GridSponsor>
 </Section>
-<Section color="primary">
-	<H2 color="white">Host</H2>
-	<R2>
+
+<Section
+	variant="primary"
+	width="narrow">
+	<H2 color="light">Host</H2>
+	<Grid columns={2}>
 		<img
 			src="{base}/iita.jpg"
 			alt="iita" />
-
 		<div>
 			<Text color="white"
 				>The International Institute of Tropical Agriculture (<Bold>IITA</Bold>)
@@ -169,16 +195,10 @@
 				improve farmers' livelihoods, and ensure a food secure future for
 				sub-Saharan Africa.</Text>
 		</div>
-	</R2>
-	<!-- <Text color="white"> -->
-	<!-- <Bold>Venue</Bold><br /> -->
-	<!-- International Institute of Tropical Agriculture (IITA) CSIR Campus opp. Old Chinese -->
-	<!-- Embassy Off Agostino Neto Road, Airport Residential Area Accra, Ghana<br /><br /> -->
-	<!-- <Bold>Accomodation</Bold><br /> -->
-	<!-- International House, IITA Headquarters, Ibadan, Nigeria -->
-	<!-- </Text> -->
+	</Grid>
 </Section>
-<Section>
+
+<Section width="narrow">
 	<H2>Program overview</H2>
 	<Text>The event runs over <Bold>five days</Bold>:</Text>
 	<Ul>
@@ -197,6 +217,9 @@
 	</Ul>
 </Section>
 
+<Imprint
+	github="https://github.com/Computational-Biology-Aachen/2026-photosynthesis-hackathon" />
+
 <style>
 	img {
 		display: none;
@@ -206,6 +229,36 @@
 			display: block;
 			max-width: 100%;
 			margin: 0 auto 1rem;
+		}
+	}
+
+	.hero-title {
+		color: var(--color-bg);
+		font-family: var(--font-sans);
+		font-weight: 700;
+		font-size: 3rem;
+		padding: 0;
+		margin: 0 0 0.5rem 0;
+		max-width: 30rem;
+	}
+
+	.hero-highlight {
+		width: fit-content;
+		background-color: var(--color-primary);
+		padding: 1.5rem;
+		border-radius: 1rem;
+	}
+
+	.hero-highlight p {
+		color: var(--color-bg);
+		font-size: 1rem;
+		font-weight: 500;
+		margin: 0;
+	}
+
+	@media (min-width: 64rem) {
+		.hero-title {
+			font-size: 5rem;
 		}
 	}
 </style>

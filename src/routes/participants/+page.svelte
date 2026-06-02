@@ -1,57 +1,53 @@
 <script lang="ts">
-	import PersonCard from '$lib/cards/ParticipantCard.svelte';
-	import Header from '$lib/sections/Header.svelte';
-	import Section from '$lib/sections/Section.svelte';
-	import H1 from '$lib/text/H1.svelte';
-	import Text from '$lib/text/Text.svelte';
 	import type { Participant } from '$lib/types';
+	import {
+		CardPerson,
+		GridPerson,
+		H1,
+		Section,
+		SectionHeader,
+		Text
+	} from '@computational-biology-aachen/design';
+
+	const images = import.meta.glob(['$lib/assets/participants/*'], {
+		eager: true,
+		query: '?url',
+		import: 'default'
+	});
+
+	const placeholder = import.meta.glob(['$lib/assets/people/placeholder.jpg'], {
+		eager: true,
+		query: '?url',
+		import: 'default'
+	});
+
+	function resolveImg(slug: string): string | undefined {
+		const key = `/src/lib/assets/participants/${slug}.jpg`;
+		return (
+			(images[key] as string)
+			?? (placeholder['/src/lib/assets/people/placeholder.jpg'] as string)
+			?? undefined
+		);
+	}
 
 	let { data } = $props();
 	// svelte-ignore state_referenced_locally
 	let members: Participant[] = data.members;
-	const link = 'participants';
 </script>
 
-<Header>
-	<H1 color="white">Participants</H1>
+<SectionHeader width="narrow">
+	<H1 color="light">Participants</H1>
 	<Text color="white">Get to know all the participants in this hackathon.</Text>
-</Header>
+</SectionHeader>
 
-<Section>
-	<div class="grid">
-		{#each members as { slug, name }}
-			<PersonCard
+<Section width="narrow">
+	<GridPerson columns={5}>
+		{#each members as { slug, name } (slug)}
+			<CardPerson
 				title={name}
-				{link}
-				{slug}>
-			</PersonCard>
+				{slug}
+				href="participants/{slug}"
+				img={resolveImg(slug)} />
 		{/each}
-	</div>
+	</GridPerson>
 </Section>
-
-<style>
-	.grid {
-		display: grid;
-		grid-template-columns: 1fr;
-		align-items: center;
-		justify-content: center;
-		grid-gap: 1rem;
-
-		@media (min-width: 600px) {
-			grid-template-columns: 1fr 1fr;
-			grid-gap: 1.25rem;
-		}
-		@media (min-width: 800px) {
-			grid-template-columns: 1fr 1fr 1fr;
-			grid-gap: 1.5rem;
-		}
-		@media (min-width: 1200px) {
-			grid-template-columns: 1fr 1fr 1fr 1fr;
-			grid-gap: 1.75rem;
-		}
-		@media (min-width: 1600px) {
-			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-			grid-gap: 2rem;
-		}
-	}
-</style>

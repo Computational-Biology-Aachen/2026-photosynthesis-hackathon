@@ -1,19 +1,42 @@
 <script lang="ts">
-	import TrainerCard from '$lib/cards/TrainerCard.svelte';
-	import Header from '$lib/sections/Header.svelte';
-	import Section from '$lib/sections/Section.svelte';
-	import H1 from '$lib/text/H1.svelte';
-	import Text from '$lib/text/Text.svelte';
 	import type { Trainer } from '$lib/types';
+	import {
+		CardPerson,
+		GridPerson,
+		H1,
+		Section,
+		SectionHeader,
+		Text
+	} from '@computational-biology-aachen/design';
+
+	const images = import.meta.glob(['$lib/assets/people/*'], {
+		eager: true,
+		query: '?url',
+		import: 'default'
+	});
+
+	const placeholder = import.meta.glob(['$lib/assets/people/placeholder.jpg'], {
+		eager: true,
+		query: '?url',
+		import: 'default'
+	});
+
+	function resolveImg(slug: string): string | undefined {
+		const key = `/src/lib/assets/people/${slug}.jpg`;
+		return (
+			(images[key] as string)
+			?? (placeholder['/src/lib/assets/people/placeholder.jpg'] as string)
+			?? undefined
+		);
+	}
 
 	let { data } = $props();
 	// svelte-ignore state_referenced_locally
 	let members: Trainer[] = data.members;
-	const link = 'trainers';
 </script>
 
-<Header>
-	<H1 color="white">Trainers</H1>
+<SectionHeader width="narrow">
+	<H1 color="light">Trainers</H1>
 	<Text color="white">
 		Get to know our distinguished team of trainers at the forefront of
 		photosynthesis research, quantitative genetics, and data-driven plant
@@ -21,38 +44,18 @@
 		bring rigorous scientific insight and practical guidance to every stage of
 		the hackathon. Their leadership ensures participants gain both cutting-edge
 		knowledge and the skills to translate data into biological understanding.</Text>
-</Header>
+</SectionHeader>
 
-<Section>
-	<div class="grid">
-		{#each members as { slug, name }}
-			<TrainerCard
+<Section width="narrow">
+	<GridPerson
+		columns={3}
+		gap="var(--space-8)">
+		{#each members as { slug, name } (slug)}
+			<CardPerson
 				title={name}
-				{link}
-				{slug}>
-			</TrainerCard>
+				{slug}
+				href="trainers/{slug}"
+				img={resolveImg(slug)} />
 		{/each}
-	</div>
+	</GridPerson>
 </Section>
-
-<style>
-	.grid {
-		display: grid;
-		grid-template-columns: 1fr;
-		align-items: center;
-		justify-content: center;
-		grid-gap: 1rem;
-
-		@media (min-width: 650px) {
-			grid-template-columns: 1fr 1fr;
-			grid-gap: 1.25rem;
-		}
-		@media (min-width: 1100px) {
-			grid-template-columns: 1fr 1fr 1fr;
-			grid-gap: 1.5rem;
-		}
-		@media (min-width: 1200px) {
-			grid-gap: 1.75rem;
-		}
-	}
-</style>

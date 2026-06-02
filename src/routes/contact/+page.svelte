@@ -1,45 +1,50 @@
 <script>
 	import { base } from '$app/paths';
-	import R2 from '$lib/R2.svelte';
-	import Header from '$lib/sections/Header.svelte';
-	import Main from '$lib/sections/Main.svelte';
-	import Section from '$lib/sections/Section.svelte';
-	import H1 from '$lib/text/H1.svelte';
-	import H2 from '$lib/text/H2.svelte';
-	import H6 from '$lib/text/H6.svelte';
-	import Text from '$lib/text/Text.svelte';
+	import {
+		Div,
+		Grid,
+		H1,
+		H2,
+		H6,
+		Section,
+		SectionHeader,
+		SectionMain,
+		Text
+	} from '@computational-biology-aachen/design';
 </script>
 
-<Header>
-	<H1 color="white">Contact us</H1>
-</Header>
+<SectionHeader width="narrow">
+	<H1 color="light">Contact us</H1>
+</SectionHeader>
 
-<Main>
+<SectionMain width="narrow">
 	<Section>
-		<R2>
+		<Grid
+			columns={2}
+			gap="var(--space-8)">
 			<img
 				src="{base}/people-working.png"
 				alt="people working" />
-			<div>
-				<H2 color="secondary">You can find us at</H2>
+			<Div>
+				<H2>You can find us at</H2>
 
-				<H6 color="secondary">EMAIL</H6>
+				<H6>EMAIL</H6>
 				<Text>anna.matuszynska@cpbl.rwth-aachen.de</Text>
 
-				<H6 color="secondary">PHONE</H6>
+				<H6>PHONE</H6>
 				<Text>Tel.: +49 (241) 80 25817</Text>
 
-				<H6 color="secondary">LOCATION</H6>
+				<H6>LOCATION</H6>
 				<Text>Computational Life Science</Text>
 				<Text>Department of Biology</Text>
 				<Text>RWTH Aachen University</Text>
 				<Text>Sammelbau Biologie 1, 42C041</Text>
 				<Text>Worringerweg 1 (Campus Melaten)</Text>
 				<Text>52074 Aachen, Germany</Text>
-			</div>
-		</R2>
+			</Div>
+		</Grid>
 	</Section>
-</Main>
+</SectionMain>
 
 <style>
 	img {

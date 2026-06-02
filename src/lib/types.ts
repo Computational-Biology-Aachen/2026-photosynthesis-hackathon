@@ -2,6 +2,8 @@ export type Participant = {
 	name: string;
 	slug: string;
 	mail?: string;
+	institution?: string;
+	nationality?: string;
 	github?: string;
 	gitlab?: string;
 	website?: string;

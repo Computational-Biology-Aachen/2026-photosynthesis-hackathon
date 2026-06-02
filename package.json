@@ -34,13 +34,12 @@
 		"vite": ">=8.0.12"
 	},
 	"dependencies": {
+		"@computational-biology-aachen/design": "github:Computational-Biology-Aachen/design",
 		"@fortawesome/free-brands-svg-icons": ">=7.2.0",
 		"@fortawesome/free-solid-svg-icons": ">=7.2.0",
-		"@picocss/pico": ">=2.1.1",
 		"@sveltejs/adapter-static": ">=3.0.10",
 		"shiki": ">=4.1.0",
-		"svelte-fa": ">=4.0.4",
-		"svelte-media-queries": ">=1.6.2"
+		"svelte-fa": ">=4.0.4"
 	},
 	"overrides": {
 		"cookie": ">=1.1.1",

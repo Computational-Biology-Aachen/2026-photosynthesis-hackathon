@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import * as config from '$lib/config';
-	import Nav from '$lib/nav/Nav.svelte';
-	import NavItem from '$lib/nav/NavItem.svelte';
-	import Footer from '$lib/sections/Footer.svelte';
+	import {
+		CollapseToBurger,
+		Navbar,
+		NavItem
+	} from '@computational-biology-aachen/design';
 	import '../app.css';
 
 	let { children } = $props();
@@ -29,40 +31,28 @@
 	<meta
 		name="twitter:card"
 		content="summary" />
+	<title>2026 Photosynthesis Hackathon</title>
 </svelte:head>
 
-<Nav>
-	<NavItem
-		href="{base}/"
-		name="Home" />
-	<NavItem
-		href="{base}/trainers"
-		name="Trainers" />
-	<NavItem
-		href="{base}/challenge"
-		name="Challenge" />
-	<NavItem
-		href="{base}/participants"
-		name="Participants" />
-	<NavItem
-		href="{base}/contact"
-		name="Contact" />
-</Nav>
+<Navbar>
+	{#snippet brand()}
+		<span class="brand">Photosynthesis Hackathon</span>
+	{/snippet}
+	<CollapseToBurger>
+		<NavItem href="{base}/">Home</NavItem>
+		<NavItem href="{base}/trainers">Trainers</NavItem>
+		<NavItem href="{base}/challenge">Challenge</NavItem>
+		<NavItem href="{base}/participants">Participants</NavItem>
+		<NavItem href="{base}/contact">Contact</NavItem>
+	</CollapseToBurger>
+</Navbar>
 
-<main>
-	{@render children()}
-</main>
-
-<Footer />
+{@render children()}
 
 <style>
-	main {
-		padding: 0;
-	}
-
-	@media (min-width: 800px) {
-		main {
-			padding-top: 3rem;
-		}
+	.brand {
+		color: var(--color-primary);
+		font-weight: 600;
+		font-size: 1rem;
 	}
 </style>

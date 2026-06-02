@@ -1,109 +1,26 @@
 @charset "UTF-8";
+@import '@computational-biology-aachen/design/tokens.css';
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
 img {
-    max-width: 100%;
-}
-
-:host,
-:root {
-    font-size: 100%
-}
-
-
-@media (min-width:48rem) {
-
-    :host,
-    :root {
-        font-size: 100%
-    }
-}
-
-@media (min-width:64rem) {
-
-    :host,
-    :root {
-        font-size: 110%
-    }
-}
-
-
-@media (min-width: 96rem) {
-
-    :host,
-    :root {
-        font-size: 120%
-    }
+	max-width: 100%;
 }
 
 html,
 body {
-    background-color: var(--white);
-    width: 100%;
-    height: 100%;
-    /* https://github.com/sveltejs/kit/issues/2733#issuecomment-1072539659 */
-    /* overflow: scroll; */
-    /* scroll-behavior: smooth; */
-}
-
-
-:root {
-    /* Colors */
-    --white: #eff1f4;
-    --black: #202632;
-    --primary: rgb(0, 97, 101);
-    --secondary: #8c7658;
-    --muted: #23403d;
-    --bright: #dec499;
-    /* Fonts */
-    --font-family-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-family-sans-serif: system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial, "Helvetica Neue", sans-serif, var(--font-family-emoji);
-    --font-family-monospace: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace, var(--font-family-emoji);
-    --font-family: sans-serif;
-    --bold: 700;
-    /* Layout */
-    --max-width: 60rem;
-    --section-ypad: 4rem;
-    /* Spacing */
-    --spacing: 1rem;
-    --text-ypad: 1rem;
-    /* Animations */
-    --transition: 0.2s ease-in-out;
-    /* Icons */
-    --icon-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(136, 145, 164)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-}
-
-table {
-    font-size: 1rem;
-    font-family: var(--font-family);
-    width: 100%;
-    margin-bottom: var(--text-ypad);
-
-    th, td {
-        padding: 1rem 0.5rem;
-    }
-
-    thead {
-        font-size: 1.25rem;
-    }
-
-    thead tr {
-        background-color: rgb(0, 97, 101);
-        color: white;
-    }
-
-    tbody tr:nth-child(even) {
-        background-color: rgba(0, 97, 101, 0.2);
-    }
-
-    tbody tr:hover {
-        transition-duration: 150ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        background-color: hsl(216, 19%, 90%);
-    }
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+	background-color: var(--color-bg);
+	color: var(--color-text);
+	font-size: var(--font-size-base);
+	line-height: var(--line-height-base);
+	font-family: var(--font-sans);
 }
