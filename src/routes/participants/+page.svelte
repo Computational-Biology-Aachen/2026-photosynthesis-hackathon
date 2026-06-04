@@ -35,6 +35,10 @@
 	let members: Participant[] = data.members;
 </script>
 
+<svelte:head>
+	<title>Participants - 2026 Photosynthesis Hackathon</title>
+</svelte:head>
+
 <SectionHeader width="narrow">
 	<H1 color="light">Participants</H1>
 	<Text color="white">Get to know all the participants in this hackathon.</Text>

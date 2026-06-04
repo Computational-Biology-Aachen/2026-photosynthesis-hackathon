@@ -37,7 +37,7 @@
 </script>
 
 <svelte:head>
-	<title>{person.name}</title>
+	<title>{person.name} - 2026 Photosynthesis Hackathon</title>
 	<meta
 		property="og:type"
 		content="article" />

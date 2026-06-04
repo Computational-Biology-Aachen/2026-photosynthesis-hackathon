@@ -13,6 +13,10 @@
 	} from '@computational-biology-aachen/design';
 </script>
 
+<svelte:head>
+	<title>Contact us - 2026 Photosynthesis Hackathon</title>
+</svelte:head>
+
 <SectionHeader width="narrow">
 	<H1 color="light">Contact us</H1>
 </SectionHeader>

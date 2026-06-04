@@ -13,6 +13,7 @@
 
 <!-- SEO -->
 <svelte:head>
+	<title>2026 Photosynthesis Hackathon</title>
 	<meta
 		name="description"
 		content={config.description} />

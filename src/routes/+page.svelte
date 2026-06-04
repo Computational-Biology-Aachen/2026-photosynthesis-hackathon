@@ -25,7 +25,7 @@
 </script>
 
 <svelte:head>
-	<title>2026 Photosynthesis hackathon</title>
+	<title>2026 Photosynthesis Hackathon</title>
 </svelte:head>
 
 <Hero src="{base}/hero2.jpg">

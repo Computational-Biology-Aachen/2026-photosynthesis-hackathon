@@ -10,6 +10,10 @@
 	let page = data;
 </script>
 
+<svelte:head>
+	<title>Challenge - 2026 Photosynthesis Hackathon</title>
+</svelte:head>
+
 <SectionHeader width="narrow">
 	<H1 color="light">Challenge</H1>
 </SectionHeader>
