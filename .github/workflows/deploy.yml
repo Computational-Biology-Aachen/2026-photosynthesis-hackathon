@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch: {}
 
 jobs:
@@ -17,6 +17,9 @@ jobs:
         with:
           node-version: 25
           cache: npm
+
+      - name: Upgrade npm
+        run: npm install -g "npm@>=12.0.0-pre.0.0"
 
       - name: Install dependencies
         run: npm install --legacy-peer-deps
