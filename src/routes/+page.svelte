@@ -10,7 +10,6 @@
 		H1,
 		H2,
 		Hero,
-		Imprint,
 		Italic,
 		Li,
 		Link,
@@ -216,9 +215,6 @@
 			for continued collaboration</Li>
 	</Ul>
 </Section>
-
-<Imprint
-	github="https://github.com/Computational-Biology-Aachen/2026-photosynthesis-hackathon" />
 
 <style>
 	img {
