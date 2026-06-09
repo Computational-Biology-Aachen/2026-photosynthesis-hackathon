@@ -15,5 +15,4 @@ During his studies, he completed an internship at a local cereal breeding compan
 
 Since photosynthesis-related traits play an important role in his current work with near-infrared reflectance–based predictions of plant performance, he is particularly pleased to take part in the hackathon. At present, he works with oilseed rape hybrids, investigating molecular and environmental biases introduced into predictions through different data types and modelling approaches.
 
-
 Through these experiences, he brings a solid background in plant breeding, complemented by practical experience in both vegetable and cereal breeding, and he hopes to gain new perspectives and insights from other disciplines, breeders, and scientists.

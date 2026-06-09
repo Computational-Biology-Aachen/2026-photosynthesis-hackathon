@@ -21,7 +21,6 @@ web applications. In addition, he has national and international
 teaching experience, having taught introductory courses in
 mathematical modeling, computation and systems biology.
 
-
 ## Professional Career
 
 Since 09/2024: Postdoctoral Research Software Engineer, Computational Life Science, Department of Biology, RWTH Aachen

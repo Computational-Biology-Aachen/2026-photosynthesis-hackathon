@@ -7,7 +7,7 @@ nationality: "Nigeria"
 
 # Summary
 
-Olaoye, Omotola Dorcas is a Norman Borlaug Fellow, a Doctoral Researcher at the West African Centre for Crop Improvement (WACCI), University of Ghana and a Doctoral Research Fellow at the International Institute of Tropical Agriculture (IITA) Cassava Breeding Program specializing in plant breeding and genetics. Her current research focuses on integrating genomic selection and high-throughput phenotyping with machine learning to improve quality traits in cassava. 
+Olaoye, Omotola Dorcas is a Norman Borlaug Fellow, a Doctoral Researcher at the West African Centre for Crop Improvement (WACCI), University of Ghana and a Doctoral Research Fellow at the International Institute of Tropical Agriculture (IITA) Cassava Breeding Program specializing in plant breeding and genetics. Her current research focuses on integrating genomic selection and high-throughput phenotyping with machine learning to improve quality traits in cassava.
 
 She possesses advanced expertise in R and a strong foundation in quantitative genetics and data-driven breeding. Dorcas has published journal articles and actively participated and presented in five scientific conferences during her PhD program, winning the best Oral presentation at the 15th International Society of Tropical Root Crops-Africa Branch’s conference in 2025. She has also contributed to a chapter of the African Prospects, Economic Outlook (2018) by the African Development Bank (AfDB).
 

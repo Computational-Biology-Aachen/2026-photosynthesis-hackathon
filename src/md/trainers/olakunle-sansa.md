@@ -27,7 +27,3 @@ resilience in cowpea. He is strongly passionate about strengthening
 the capacity of African researchers and supporting smallholder farmers
 for improved livelihood and sustainable food production in sub-Saharan
 Africa.
-
-
-
-
