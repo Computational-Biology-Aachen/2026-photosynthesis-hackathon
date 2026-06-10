@@ -22,4 +22,4 @@ export type Trainer = {
   website?: string;
   orcid?: string;
 };
-export type MdPage = {};
+export type MdPage = Record<string, never>;

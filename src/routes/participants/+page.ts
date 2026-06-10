@@ -3,7 +3,7 @@ import { error } from "@sveltejs/kit";
 
 export async function load() {
   try {
-    let members: Participant[] = [];
+    const members: Participant[] = [];
 
     const paths = import.meta.glob("/src/md/participants/*.md", {
       eager: true,

@@ -9,7 +9,7 @@ export async function load({ params }) {
       slug: params.slug,
       meta: member.metadata,
     };
-  } catch (e) {
+  } catch {
     error(404, `Could not find ${params.slug}`);
   }
 }
