@@ -7,20 +7,22 @@
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
-}
-
+/* Note: setting height: 100% and overflow: scroll on body / html breaks
+window.scrollTo/window.scrollY as that scrolls via the viewport.
+Set min-height: 100vh; on #app in app.html instead
+*/
 html,
 body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
-  overflow: scroll;
   background-color: var(--color-bg);
   color: var(--color-text);
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
   font-family: var(--font-sans);
+}
+
+img {
+  max-width: 100%;
 }
