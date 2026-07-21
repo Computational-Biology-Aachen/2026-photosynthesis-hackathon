@@ -42,7 +42,7 @@
     "svelte-fa": ">=4.0.4"
   },
   "overrides": {
-    "cookie": ">=1.1.1",
+    "cookie": "^1.1.1",
     "typescript": ">=6.0.2",
     "@sveltejs/kit": ">=2.52.2",
     "eslint": ">=10.0.0",
