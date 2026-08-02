@@ -28,7 +28,7 @@
       gap="var(--space-8)"
     >
       <img
-        src="{base}/people-working.png"
+        src="{base}/people-working.jpg"
         alt="people working"
       />
       <Div>
