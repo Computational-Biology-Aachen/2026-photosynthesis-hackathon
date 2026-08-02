@@ -24,6 +24,10 @@ export default ts.config(
       // typescript-eslint strongly recommend that you do not use the no-undef lint rule on TypeScript projects.
       // see: https://typescript-eslint.io/troubleshooting/faqs/eslint/#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
       "no-undef": "off",
+      // Not enabled by svelte.configs.recommended - surfaces the Svelte
+      // compiler's own warnings (including a11y checks like missing alt
+      // text) as lint errors instead of easy-to-miss build output.
+      "svelte/valid-compile": ["error", { ignoreWarnings: false }],
     },
   },
   {
