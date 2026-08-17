@@ -7,6 +7,7 @@
     SectionHeader,
     Text,
   } from "@computational-biology-aachen/design";
+  import Row from "@computational-biology-aachen/design/Row.svelte";
   import {
     faGithub,
     faGitlab,
@@ -67,36 +68,38 @@
       {#if country != null}
         <Text color="white">{country}</Text>
       {/if}
-      {#if mail != null}
-        <Link
-          color="light"
-          href="mailto:{mail}"><Fa icon={faEnvelope} /></Link
-        >
-      {/if}
-      {#if github != null}
-        <Link
-          color="light"
-          href={github}><Fa icon={faGithub} /></Link
-        >
-      {/if}
-      {#if gitlab != null}
-        <Link
-          color="light"
-          href={gitlab}><Fa icon={faGitlab} /></Link
-        >
-      {/if}
-      {#if orcid != null}
-        <Link
-          color="light"
-          href={orcid}><Fa icon={faOrcid} /></Link
-        >
-      {/if}
-      {#if website != null}
-        <Link
-          color="light"
-          href={website}><Fa icon={faHome} /></Link
-        >
-      {/if}
+      <Row>
+        {#if mail != null}
+          <Link
+            color="light"
+            href="mailto:{mail}"><Fa icon={faEnvelope} /></Link
+          >
+        {/if}
+        {#if github != null}
+          <Link
+            color="light"
+            href={github}><Fa icon={faGithub} /></Link
+          >
+        {/if}
+        {#if gitlab != null}
+          <Link
+            color="light"
+            href={gitlab}><Fa icon={faGitlab} /></Link
+          >
+        {/if}
+        {#if orcid != null}
+          <Link
+            color="light"
+            href={orcid}><Fa icon={faOrcid} /></Link
+          >
+        {/if}
+        {#if website != null}
+          <Link
+            color="light"
+            href={website}><Fa icon={faHome} /></Link
+          >
+        {/if}
+      </Row>
     </div>
     {#if imageError}
       <div class="placeholder">
@@ -118,6 +121,7 @@
   .grid {
     display: grid;
     margin: 0 auto;
+    align-items: center;
     width: 100%;
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -127,6 +131,12 @@
     .grid {
       grid-template-columns: 1fr 300px;
     }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
   }
 
   img {

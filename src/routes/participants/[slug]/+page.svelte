@@ -83,6 +83,7 @@
     margin: 0 auto;
     width: 100%;
     grid-template-columns: 1fr;
+    align-items: center;
     gap: 1rem;
   }
 
@@ -90,6 +91,12 @@
     .grid {
       grid-template-columns: 1fr 300px;
     }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
   }
 
   img {
