@@ -25,13 +25,13 @@
     "globals": ">=17.12.0",
     "image-size": "^2.0.4",
     "mdsvex": ">=0.12.7",
-    "prettier": ">=3.9.4",
+    "prettier": ">=3.9.8",
     "prettier-plugin-svelte": ">=4.1.1",
     "prettier-plugin-tailwindcss": ">=0.8.0",
-    "svelte": ">=5.57.0",
+    "svelte": ">=5.57.1",
     "svelte-check": ">=4.7.4",
     "typescript": ">=6.0.2 <6.1.0",
-    "typescript-eslint": ">=8.70.0",
+    "typescript-eslint": ">=8.70.1",
     "vite": ">=8.3.0"
   },
   "dependencies": {
