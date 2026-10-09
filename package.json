@@ -46,6 +46,6 @@
     "cookie": "^1.1.1",
     "typescript": ">=6.0.2 <6.1.0",
     "@sveltejs/kit": ">=2.52.2",
-    "eslint": ">=10.0.0"
+    "eslint": "$eslint"
   }
 }
