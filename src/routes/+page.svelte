@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { base } from "$app/paths";
+  import { asset, resolve } from "$app/paths";
   import {
     Bold,
     Button,
@@ -18,16 +18,16 @@
     Ul,
   } from "@computational-biology-aachen/design";
 
-  import iitaLogo from "$lib/assets/iita_logo.png";
-  import jiiLogo from "$lib/assets/jan-ingenhousz-institute-logo.png";
-  import mcLogo from "$lib/assets/mastercard-cambridge.png";
+  import iitaLogo from "#lib/assets/iita_logo.png";
+  import jiiLogo from "#lib/assets/jan-ingenhousz-institute-logo.png";
+  import mcLogo from "#lib/assets/mastercard-cambridge.png";
 </script>
 
 <svelte:head>
   <title>2026 Photosynthesis Hackathon</title>
 </svelte:head>
 
-<Hero src="{base}/hero2.jpg">
+<Hero src={asset("hero2.jpg")}>
   <h1 class="hero-title">JII OPEN CHALLENGE</h1>
   <div class="hero-highlight">
     <p>From field photosynthesis to genetic architecture</p>
@@ -43,7 +43,7 @@
     gap="var(--space-8)"
   >
     <img
-      src="{base}/kenya1.jpg"
+      src={asset("kenya1.jpg")}
       alt="placeholder"
     />
     <Div>
@@ -105,15 +105,15 @@
 
   <Grid columns={3}>
     <Button
-      href="{base}/trainers"
+      href={resolve("/trainers")}
       fullWidth>Trainers</Button
     >
     <Button
-      href="{base}/challenge"
+      href={resolve("/challenge")}
       fullWidth>Challenge</Button
     >
     <Button
-      href="{base}/participants"
+      href={resolve("/participants")}
       fullWidth>Participants</Button
     >
   </Grid>
@@ -205,7 +205,7 @@
   <H2 color="light">Host</H2>
   <Grid columns={2}>
     <img
-      src="{base}/iita.jpg"
+      src={asset("iita.jpg")}
       alt="iita"
     />
     <div>

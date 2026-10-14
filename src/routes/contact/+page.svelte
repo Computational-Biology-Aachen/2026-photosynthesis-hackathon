@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { base } from "$app/paths";
+  import { asset } from "$app/paths";
   import {
     Div,
     Grid,
@@ -28,7 +28,7 @@
       gap="var(--space-8)"
     >
       <img
-        src="{base}/people-working.jpg"
+        src={asset("people-working.jpg")}
         alt="people working"
       />
       <Div>

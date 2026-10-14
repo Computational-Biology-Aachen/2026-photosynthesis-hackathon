@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Trainer } from "$lib/types";
+  import type { Trainer } from "#lib/types.js";
   import {
     H1,
     Link,
@@ -16,7 +16,7 @@
   import { faEnvelope, faHome } from "@fortawesome/free-solid-svg-icons";
   import Fa from "svelte-fa";
 
-  const images = import.meta.glob(["$lib/assets/people/*"], {
+  const images = import.meta.glob(["/src/lib/assets/people/*"], {
     eager: true,
     query: "?url",
     import: "default",
