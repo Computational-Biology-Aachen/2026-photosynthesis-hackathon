@@ -1,8 +1,8 @@
 <script lang="ts">
   import { beforeNavigate } from "$app/navigation";
-  import { base } from "$app/paths";
+  import { resolve } from "$app/paths";
   import { updated } from "$app/state";
-  import * as config from "$lib/config";
+  import * as config from "#lib/config.js";
   import {
     CollapseToBurger,
     Imprint,
@@ -56,11 +56,11 @@
     <span class="brand">Photosynthesis Hackathon</span>
   {/snippet}
   <CollapseToBurger>
-    <NavItem href="{base}/">Home</NavItem>
-    <NavItem href="{base}/trainers">Trainers</NavItem>
-    <NavItem href="{base}/challenge">Challenge</NavItem>
-    <NavItem href="{base}/participants">Participants</NavItem>
-    <NavItem href="{base}/contact">Contact</NavItem>
+    <NavItem href={resolve("/")}>Home</NavItem>
+    <NavItem href={resolve("/trainers")}>Trainers</NavItem>
+    <NavItem href={resolve("/challenge")}>Challenge</NavItem>
+    <NavItem href={resolve("/participants")}>Participants</NavItem>
+    <NavItem href={resolve("/contact")}>Contact</NavItem>
   </CollapseToBurger>
 </Navbar>
 

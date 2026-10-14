@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Participant } from "$lib/types";
+  import type { Participant } from "#lib/types.js";
   import {
     CardPerson,
     GridPerson,
@@ -9,17 +9,20 @@
     Text,
   } from "@computational-biology-aachen/design";
 
-  const images = import.meta.glob(["$lib/assets/participants/*"], {
+  const images = import.meta.glob(["/src/lib/assets/participants/*"], {
     eager: true,
     query: "?url",
     import: "default",
   });
 
-  const placeholder = import.meta.glob(["$lib/assets/people/placeholder.jpg"], {
-    eager: true,
-    query: "?url",
-    import: "default",
-  });
+  const placeholder = import.meta.glob(
+    ["/src/lib/assets/people/placeholder.jpg"],
+    {
+      eager: true,
+      query: "?url",
+      import: "default",
+    },
+  );
 
   function resolveImg(slug: string): string | undefined {
     const key = `/src/lib/assets/participants/${slug}.jpg`;
