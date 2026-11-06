@@ -24,14 +24,14 @@
     "eslint": ">=10.0.0",
     "eslint-config-prettier": ">=10.1.8",
     "eslint-plugin-svelte": ">=3.20.0",
-    "globals": ">=17.13.0",
+    "globals": ">=17.14.0",
     "image-size": "^2.0.4",
     "mdsvex": ">=0.12.7",
     "prettier": ">=3.9.9",
     "prettier-plugin-svelte": ">=4.1.1",
     "prettier-plugin-tailwindcss": ">=0.8.0",
     "svelte": ">=5.57.3",
-    "svelte-check": ">=4.7.5",
+    "svelte-check": ">=4.7.8",
     "typescript": ">=6.0.2 <6.1.0",
     "typescript-eslint": ">=8.72.1",
     "vite": ">=8.3.3"
@@ -41,7 +41,7 @@
     "@fortawesome/free-brands-svg-icons": ">=7.3.0",
     "@fortawesome/free-solid-svg-icons": ">=7.3.0",
     "@sveltejs/adapter-static": ">=4.0.0",
-    "shiki": ">=4.5.0",
+    "shiki": ">=4.6.0",
     "svelte-fa": ">=4.0.4"
   },
   "overrides": {
