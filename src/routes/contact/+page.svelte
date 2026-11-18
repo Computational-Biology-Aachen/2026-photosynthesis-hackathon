@@ -29,7 +29,11 @@
     >
       <img
         src={asset("people-working.jpg")}
-        alt="people working"
+        alt=""
+        width="777"
+        height="943"
+        loading="lazy"
+        decoding="async"
       />
       <Div>
         <H2>You can find us at</H2>

@@ -44,7 +44,10 @@
   >
     <img
       src={asset("kenya1.jpg")}
-      alt="placeholder"
+      alt="Hackathon participants discussing code around a laptop with a tutor"
+      width="1920"
+      height="1280"
+      fetchpriority="high"
     />
     <Div>
       <H1>Photosynthesis hackathon</H1>
@@ -206,7 +209,11 @@
   <Grid columns={2}>
     <img
       src={asset("iita.jpg")}
-      alt="iita"
+      alt="Aerial view of IITA experimental field plots with mountains behind"
+      width="666"
+      height="408"
+      loading="lazy"
+      decoding="async"
     />
     <div>
       <Text color="white"

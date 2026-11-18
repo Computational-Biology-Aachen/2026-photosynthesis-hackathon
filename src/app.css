@@ -9,7 +9,7 @@
 
 /* Note: setting height: 100% and overflow: scroll on body / html breaks
 window.scrollTo/window.scrollY as that scrolls via the viewport.
-Set min-height: 100vh; on #app in app.html instead
+Set min-height: 100dvh; on #app in app.html instead
 */
 html,
 body {
@@ -25,4 +25,5 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }
