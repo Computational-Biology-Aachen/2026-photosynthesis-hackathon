@@ -72,31 +72,51 @@
         {#if mail != null}
           <Link
             color="light"
-            href="mailto:{mail}"><Fa icon={faEnvelope} /></Link
+            href="mailto:{mail}"
+            ><Fa
+              icon={faEnvelope}
+              title="Email"
+            /></Link
           >
         {/if}
         {#if github != null}
           <Link
             color="light"
-            href={github}><Fa icon={faGithub} /></Link
+            href={github}
+            ><Fa
+              icon={faGithub}
+              title="GitHub"
+            /></Link
           >
         {/if}
         {#if gitlab != null}
           <Link
             color="light"
-            href={gitlab}><Fa icon={faGitlab} /></Link
+            href={gitlab}
+            ><Fa
+              icon={faGitlab}
+              title="GitLab"
+            /></Link
           >
         {/if}
         {#if orcid != null}
           <Link
             color="light"
-            href={orcid}><Fa icon={faOrcid} /></Link
+            href={orcid}
+            ><Fa
+              icon={faOrcid}
+              title="ORCID"
+            /></Link
           >
         {/if}
         {#if website != null}
           <Link
             color="light"
-            href={website}><Fa icon={faHome} /></Link
+            href={website}
+            ><Fa
+              icon={faHome}
+              title="Website"
+            /></Link
           >
         {/if}
       </Row>
@@ -109,6 +129,9 @@
       <img
         src={img}
         alt={name}
+        width="300"
+        height="300"
+        fetchpriority="high"
         onerror={handleError}
       />
     {/if}

@@ -57,7 +57,11 @@
       {#if mail != null}
         <Link
           color="light"
-          href="mailto:{mail}"><Fa icon={faEnvelope} /></Link
+          href="mailto:{mail}"
+          ><Fa
+            icon={faEnvelope}
+            title="Email"
+          /></Link
         >
       {/if}
     </div>
@@ -69,6 +73,9 @@
       <img
         src={img}
         alt={name}
+        width="300"
+        height="300"
+        fetchpriority="high"
         onerror={handleError}
       />
     {/if}
