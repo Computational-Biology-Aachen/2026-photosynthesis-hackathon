@@ -25,6 +25,13 @@
 
 <svelte:head>
   <title>2026 Photosynthesis Hackathon</title>
+  <!-- The hero is a CSS background image (LCP), invisible to the preload scanner -->
+  <link
+    rel="preload"
+    as="image"
+    href={asset("hero2.jpg")}
+    fetchpriority="high"
+  />
 </svelte:head>
 
 <Hero src={asset("hero2.jpg")}>
@@ -47,7 +54,8 @@
       alt="Hackathon participants discussing code around a laptop with a tutor"
       width="1920"
       height="1280"
-      fetchpriority="high"
+      loading="lazy"
+      decoding="async"
     />
     <Div>
       <H1>Photosynthesis hackathon</H1>
